@@ -7,7 +7,7 @@ import { fadeIn } from '../variants'
 
 const Hero = () => {
   return (
-    <div className="flex md:px-14 p-4 mt-[5rem] md:mt-[4rem] xl:mt-[9rem] max-w-screen-2xl mx-auto min-h-[200px]">
+    <div className="flex md:px-14 p-4 mt-[2rem] md:mt-[2rem] xl:mt-[9rem] max-w-screen-2xl mx-auto max-h-[560px] absolute grow relative items-end items-none md:items-center">
       <div className="flex md:flex-row flex-col w-full">
         <div
           className="w-[100%] flex flex-col md:mt-0 lg:mt-0 mt-3"
@@ -17,7 +17,7 @@ const Hero = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}
-          className="xl:text-8xl lg:text-4xl text-4xl text-white font-black font-euclid font-black leading-[1.2]"
+          className="xl:text-7xl md:text-5xl text-2xl text-white font-black font-euclid font-black leading-[1.2]"
           >
             Turn Your Travel Dreams
           </motion.h1>
@@ -26,7 +26,7 @@ const Hero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
-          className="xl:text-8xl lg:text-4xl md:text-4xl text-4xl text-white font-black inter">
+          className="xl:text-7xl md:text-5xl md:text-4xl text-2xl text-white font-black inter">
             Into Reality
           </motion.h1>
           <motion.h3
@@ -35,7 +35,7 @@ const Hero = () => {
           whileInView={"show"}
           viewport={{ once: true }}
 
-          className="xl:text-lg text-gray-100 pt-8 font-medium text-[18px] pb-12">
+          className="xl:text-lg text-gray-100 pt-4 pb-6 md:pt-5 font-medium text[16px] md:text-[18px] md:pb-8">
             Your trusted partner for <strong className='font-black'>work visas</strong>, <strong className='font-black'>local flight bookings</strong>, and unforgettable travel experiences.
           </motion.h3>
           <motion.div 
@@ -45,14 +45,14 @@ const Hero = () => {
           viewport={{ once: true }}
           className="flex flex-row gap-3 mt-3">
             <Link to="/"
-              className="flex items-center border-[5px] justify-center text-md bg-opacity-100 hover:bg-opacity-50 border-white bg-secondary transition-all duration-300  md:py-4 md:px-8 text-white rounded-full hover:text-white text-sm md:text-lg font-semibold"
+              className="flex items-center border-[5px] justify-center text-md bg-opacity-100 hover:bg-opacity-50 border-white bg-secondary transition-all duration-300 py-2 px-4 lg:py-4 lg:px-8 text-white rounded-full hover:text-white text-sm md:text-lg font-semibold"
             >
-              <img src={airplane} className='pr-2' alt="airplane icon image"/>
+              <img src={airplane} className='pr-2' alt="airplane icon image"/> 
               Flight
             </Link>
             <Link
               to="/"
-              className="flex items-center border-[2px] border-white bg-opacity-100 hover:bg-opacity-50 justify-center bg-transparent transition-all duration-300 text-white md:py-4 md:px-8 rounded-full hover:text-white hover:bg-primary font-semibold text-sm md:text-lg"
+              className="flex items-center border-[2px] border-white bg-opacity-100 hover:bg-opacity-50 justify-center bg-transparent transition-all duration-300 text-white py-2 px-5 md:py-2 md:px-6 lg:py-4 md:px-8 rounded-full hover:text-white hover:bg-primary font-semibold text-sm md:text-lg"
             >
               <img src={stamp} className='pr-2' alt="visa stamp icon image" />
               Work Visas

@@ -1,7 +1,7 @@
 
 import { useState, useEffect  } from 'react';
 import logo from '../assets/logos.png';
-import { BiSupport, BiTaxi, BiChevronDown } from "react-icons/bi";
+import { BiChevronDown } from "react-icons/bi";
 import {FaXmark, FaBars} from 'react-icons/fa6'
 import { NavLink, Link } from 'react-router-dom';
 import { fadeIn } from '../variants'
@@ -21,11 +21,11 @@ const Navbar = () => {
       link: "Services",
       path: "/services",
       icon: <BiChevronDown aria-hidden="true" />,
-      ariaLabel: "Learn about our company, visa processes, travel packages, blog, and more",
+      ariaLabel: "Explore top-rated visa services and affordable travel packages with Smash Travels",
       submenu: [
-        { link: "Flight", path: "/flight", ariaLabel: "Learn more about flight packages" },
-        { link: "Work Visa", path: "/work", ariaLabel: "Read more on work visa packages" },
-        { link: "Passport", path: "/passport", ariaLabel: "Learn about passport application processes" },
+        { link: "Flight", path: "/flight", ariaLabel: "Book affordable flights for your next adventure" },
+        { link: "Work Visa", path: "/work", ariaLabel: "Hassle-free work visa application services" },
+        { link: "Passport", path: "/passport", ariaLabel: "Quick and easy passport processing" },
       ],
     },
     {
@@ -92,7 +92,7 @@ const Navbar = () => {
   return (
     
     <>
-      <nav className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto w-full z-70 text-white px-4 transition-all duration-500 ${
+      <nav role='navigation' aria-label="Main Navigation" className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto w-full z-70 text-white px-4 transition-all duration-500 ${
             isMenuOpened ? "bg-gradient-active" : "bg-transparent"
           }`}
           style={
@@ -103,22 +103,23 @@ const Navbar = () => {
       <div
           className="flex justify-between z-20" 
 >
-          <div className="flex items-center space-x-14 justify-between w-[100%] md:pb-3 pb-2">
+          <div className="flex items-center justify-between w-[100%] md:pb-3 md:pb-2">
             <NavLink
               to="/"
-              className="h-[85px] items-center justify-center flex rounded-md"
+              className="h-[43px] items-center justify-center flex rounded-md"
               aria-label="Smash Travels home page"
             >
-              <img src={logo} alt="Smash Travels - Your trusted travel and visa agency" className="w-[64px] mb-3" />
-              <span className='w-full text-[24px] font-black flex'>Smash Travels</span>
+              <img src={logo} alt="Smash Travels - Affordable travel packages and visa services" className=" w-[50px] md:w-[64px] mb-3" />
+              <span className='w-full md:text-[24px] font-black flex'>Smash Travels</span>
             </NavLink>
-            <div className=' flex w-[40%] text-[18px] font-medium space-x-7'>
+            <div className=' flex lg:w-[40%] text-[18px] font-medium'>
                 <ul className='hidden items-center md:hidden lg:flex w-full items-center justify-between'> 
                 <div className='flex items-center gap-1 text-white hover:text-secondary  transition-all duration-300'>
-                <NavLink to='/booking' aria-label="Explore our Smash Travels homepage" className='text-md'>Home</NavLink>
+                <NavLink to='/' aria-label="Book your next affordable travel package with Smash Travels" className='text-md' >Home</NavLink>
               </div>
-              <div className='flex items-center gap-1 hover:text-secondary text-white hover:text-secondary transition-all duration-300'>
+              <div className='flex items-center gap-1 hover:text-secondary justify-center text-white hover:text-secondary transition-all duration-300'>
                  <NavLink to='/contact' aria-label="" className='text-md'>Services</NavLink>
+                 <BiChevronDown aria-hidden="true" className='text-[25px] mt-[1px]'/>
               </div>
               <div className='flex items-center gap-1 hover:text-secondary text-white hover:text-secondary transition-all duration-300'>
                  <NavLink to='/contact' aria-label="" className='text-md'>About Us</NavLink>
@@ -129,7 +130,7 @@ const Navbar = () => {
                 </ul>
            
 
-              <div className='flex align-center hidden'>
+              <div className='md:flex align-center lg:hidden hidden'>
               <button 
                   onClick={toggle} 
                   className="relative transition-all duration-700 flex items-center"
@@ -156,7 +157,7 @@ const Navbar = () => {
 
              </div>
             </div>
-            <NavLink to='/login' className='bg-secondary hidden lg:block py-4 px-8 rounded-full text-white bg-opacity-100 hover:bg-opacity-50 hover:text-white hover:opacity-1 transition-all duration-300 border-[3px] border-primary hover:border-white text-lg font-bold'>Get Started</NavLink>
+            <NavLink to='/login' className='bg-secondary hidden lg:block py-4 px-8 rounded-full text-white bg-opacity-100 hover:bg-opacity-50 hover:text-white hover:opacity-1 transition-all duration-300 border-[5px] border-primary hover:border-white text-lg font-bold'>Get Started</NavLink>
 
             </div>
              {/* small screen */}

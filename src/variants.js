@@ -23,3 +23,20 @@ export const fadeIn = (direction, delay) => {
     }
 
 }
+
+
+
+export const blurIn = (delay = 3) => ({
+    hidden: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 0.8, // Adjust the duration for smoothness
+        delay,
+        ease: "easeOut", // Smooth easing
+      },
+    },
+  });
+  

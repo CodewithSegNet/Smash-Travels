@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.react-datepicker__input-container input:focus {
+    @apply 
+    outline-none 
+    border-none 
+    shadow-none;
+  }
+
+
+
+  .slick-track {
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .slider-container{
+    background-color: #fff;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+
+
+  .slick-prev:before {
+    content: '←';
+    color: #c8c8c8 !important;
+  }
+  
+  .slick-prev:hover:before {
+    color: #FD9602 !important;
+  }
+  
+  .slick-next:before {
+    content: '←';
+    color: #c8c8c8 !important;
+  }
+  
+  .slick-next:hover:before {
+    color: #FD9602 !important;
+  }
+  
