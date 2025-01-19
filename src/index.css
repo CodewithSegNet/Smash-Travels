@@ -2,43 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .react-datepicker__input-container input:focus {
-    @apply 
-    outline-none 
+  @apply outline-none 
     border-none 
     shadow-none;
-  }
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
+}
 
 
 
-  .slick-track {
-    display: flex !important;
-    align-items: center !important;
-  }
-  
-  .slider-container{
-    background-color: #fff;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-  }
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+}
+input[type="radio"]:checked {
+  background-color: #fd9602;
+}
 
 
-  .slick-prev:before {
-    content: '←';
-    color: #c8c8c8 !important;
-  }
-  
-  .slick-prev:hover:before {
-    color: #FD9602 !important;
-  }
-  
-  .slick-next:before {
-    content: '←';
-    color: #c8c8c8 !important;
-  }
-  
-  .slick-next:hover:before {
-    color: #FD9602 !important;
-  }
-  
+/* Hide the native checkbox */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the checkbox container */
+.custom-checkbox .checkmark {
+  display: inline-block;
+  width: 24px; /* Adjust size */
+  height: 24px; /* Adjust size */
+  border: 2px solid #ccc;
+  border-radius: 4px; /* Rounded corners */
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Change background and border color on hover */
+.custom-checkbox .checkmark:hover {
+  border-color: #999;
+}
+
+/* Checked state styles */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #fd9602;
+  border-color: #fd9602;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+
+.slider-container {
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.slick-track {
+  width: 9192px !important;
+}
+
+.slick-prev:before {
+  content: "←";
+  color: #c8c8c8 !important;
+}
+
+.slick-prev:hover:before {
+  color: #fd9602 !important;
+}
+
+.slick-next:before {
+  content: "←";
+  color: #c8c8c8 !important;
+}
+
+.slick-next:hover:before {
+  color: #fd9602 !important;
+}

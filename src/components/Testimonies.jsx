@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import Slider from "react-slick";
 import img from "../assets/image_fx_21.png";
@@ -62,9 +64,10 @@ function Testimonies() {
     infinite: true,
     autoplay: true,
     arrows: false,
-    speed: 500,
+    autoplaySpeed: 0,
+    speed: 7000,
+     cssEase: "linear",
     slidesToShow: 4,
-    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
@@ -96,11 +99,11 @@ function Testimonies() {
 
   return (
     <div className="my-16">
-      <h1 className="text-center text-3xl lg:text-5xl font-bold mb-10">Testimonials</h1>
-      <Slider {...settings} className="px-4">
-        {testimonyprofile.map((item, index) => (
-          <div key={index} className="">
-            <div className="relative bg-regular p-6 items-center w-[400px] rounded-xl shadow-md min-h-[370px]">
+      <h1 className="text-center text-3xl lg:text-5xl font-bold mb-[4rem]">Testimonials</h1>
+      <Slider {...settings} className=" px-4">
+      {testimonyprofile.map((item, index) => (
+          <div key={index} className="space-x-4">
+            <div className="relative bg-regular p-6 items-center max-w-[400px] rounded-xl shadow-md min-h-[370px] mx-[10px]">
               {/* Container for image and vector */}
               <div className="relative justify-center">
                 {/* Main Image */}

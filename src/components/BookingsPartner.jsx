@@ -113,7 +113,7 @@ const BookingsPartner = () => {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <h1 className="text-3xl lg:text-5xl text-[#393939] font-bold text-center">Successful Bookings</h1>
+          <h1 className="text-3xl lg:text-4xl text-[#393939] font-bold text-center">Successful Bookings</h1>
         </motion.div>
 
         <motion.div
@@ -136,7 +136,7 @@ const BookingsPartner = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-      className="text-3xl lg:text-5xl text-[#393939] font-bold text-center">Our Partners</motion.h1>
+      className="text-3xl lg:text-4xl text-[#393939] font-bold text-center">Our Partners</motion.h1>
 
       <div className="flex lg:mt-[4rem] md:mt-[3rem] mt-[2rem] w-full">
         <Carousel slides={carouselData1} settings={sliderSettings1}/>

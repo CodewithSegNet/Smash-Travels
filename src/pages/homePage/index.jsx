@@ -10,6 +10,7 @@ import Cards from "../../components/Card";
 import Whychooseus from "../../components/Whychooseus";
 import Footer from "../../components/Footer";
 import Testimonies from "../../components/Testimonies"
+import Faq from "../../components/Faq"
 
 
 const HomePage = () => {
@@ -55,6 +56,7 @@ const HomePage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://www.smashtravels.com" />
       </Helmet>
+
         <div style={HeroImg}>
           <img
             src={backgroundImage}
@@ -76,6 +78,7 @@ const HomePage = () => {
           <Cards />
           <Whychooseus/>
           <Testimonies/>
+          <Faq/>
           <Footer/>
           </div>
 

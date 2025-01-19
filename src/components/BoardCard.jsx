@@ -163,12 +163,16 @@ const BoardCard = () => {
           </select>
         </div>
       </div>
-      <div className=" px-[3rem] pt-[2rem] pb-[5rem] lg:py[3rem] flex items-center">
-        <input type="checkbox" className="mr-4 w-4 h-4 md:w-6 md:h-6" />
-        My dates are flexible (+/- 3 days)
-      </div>
+      <div className="flex items-center px-[3rem] pt-[2rem] pb-[5rem] lg:py-[3rem]">
+  <label className="flex items-center gap-2 custom-checkbox">
+    <input type="checkbox" className="hidden" />
+    <span className="checkmark"></span>
+    <span>My dates are flexible (+/- 3 days)</span>
+  </label>
+</div>
 
-      <button className="bg-primary rounded-full bottom-[-32px] text-white py-[1rem] px-[2rem] md:py-[1.5rem] md:px-[4rem] left-1/2 transform -translate-x-1/2 hover:scale-110 md:text-[1.3rem] lg:text-[1.8rem] font-bold absolute transition duration-300">
+
+      <button className="bg-primary rounded-full bottom-[-32px] hover:text-white text-white py-[1rem] px-[2rem] md:py-[1.5rem] md:px-[4rem] left-1/2 transform -translate-x-1/2 hover:bg-opacity-80 border-primary md:text-[1.3rem] lg:text-[1.8rem] font-bold absolute transition duration-300">
   Search Flight
 </button>
     </motion.div>

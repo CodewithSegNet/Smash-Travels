@@ -20,7 +20,7 @@ const Carousel = ({ slides, settings }) => {
   
     return (
       <motion.div
-      variants={fadeIn(1)}
+      variants={blurIn(1)}
       animate={controls} 
         initial="hidden"
         whileInView={"show"}
@@ -34,7 +34,7 @@ const Carousel = ({ slides, settings }) => {
               <img
                 src={slide.src}
                 alt={slide.alt}
-                className="mx-auto w-[150px] md:w-[202px] object-cover"
+                className="mx-auto w-[150px] md:w-[180px] object-cover"
               />
             </div>
           ))}

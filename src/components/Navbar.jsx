@@ -4,7 +4,12 @@ import logo from '../assets/logos.png';
 import { BiChevronDown } from "react-icons/bi";
 import {FaXmark, FaBars} from 'react-icons/fa6'
 import { NavLink, Link } from 'react-router-dom';
-import { fadeIn } from '../variants'
+import airplane from '../assets/Vector2.svg'
+import visa from '../assets/carbon_stamp.svg'
+import passport from '../assets/la_passport.svg'
+
+
+
 
 
 
@@ -40,12 +45,14 @@ const Navbar = () => {
       },
   ];
   
-
+ 
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   
   const toggle = () => {
     setIsMenuOpened((prev) => !prev);
   };
+
+  
   
   useEffect(() => {
     const isMobile = window.matchMedia("(max-width: 1020px)").matches;
@@ -89,6 +96,8 @@ const Navbar = () => {
   };
 
   
+
+  
   return (
     
     <>
@@ -117,10 +126,72 @@ const Navbar = () => {
                 <div className='flex items-center gap-1 text-white hover:text-secondary  transition-all duration-300'>
                 <NavLink to='/' aria-label="Book your next affordable travel package with Smash Travels" className='text-md' >Home</NavLink>
               </div>
-              <div className='flex items-center gap-1 hover:text-secondary justify-center text-white hover:text-secondary transition-all duration-300'>
-                 <NavLink to='/contact' aria-label="" className='text-md'>Services</NavLink>
-                 <BiChevronDown aria-hidden="true" className='text-[25px] mt-[1px]'/>
-              </div>
+              <div className="relative">
+                  <div
+                    className="flex items-center gap-1 hover:text-secondary justify-center text-white hover:text-secondary transition-all duration-300 cursor-pointer"
+                    onClick={() => handleDropdownToggle(1)}
+                  >
+                    <NavLink to="/contact" className="text-md">
+                      Services
+                    </NavLink>
+                    <BiChevronDown
+                      aria-hidden="true"
+                      className={`text-[25px] mt-[1px] transition-transform duration-300 ${
+                        openSubmenuIndex === 1 ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+
+                  {openSubmenuIndex === 1 && (
+                    <div className="absolute top-[100%] left-0 bg-white shadow-lg rounded-lg mt-2 z-10 w-[350px]">
+                      <ul className="py-2">
+                        <li className="px-4 py-2 hover:bg-gray-100">
+                          <NavLink to="/service1" className="text-black">
+                          <div className='flex items-center'>
+                            <div className='w-10 h-6 pr-3'>
+                              <img className='text-primary' src={airplane} alt="" />
+                            </div>
+                            <div>
+                            <p>Flight</p>
+                            <span className='m-0 p-0 text-gray-500 text-[10px]'>Effortless bookings, unbeatable prices, anytime, anywhere.</span>
+                            </div>
+                            
+                          </div>
+                          </NavLink>
+                        </li>
+                        <li className="px-4 py-2 hover:bg-gray-100">
+                        <NavLink to="/service2" className="text-black">
+                          <div className='flex items-center'>
+                            <div className='w-10 h-6 pr-3'>
+                              <img className='text-primary' src={visa} alt="" />
+                            </div>
+                            <div>
+                            <p>Work Visas</p>
+                            <span className='m-0 p-0 text-gray-500 text-[10px]'>Fast, secure, and hassle-free visa processing.</span>
+                            </div>
+                            
+                          </div>
+                          </NavLink>
+                        </li>
+                        <li className="px-4 py-2 hover:bg-gray-100">
+                        <NavLink to="/service2" className="text-black">
+                          <div className='flex items-center'>
+                            <div className='w-10 h-6 pr-3'>
+                              <img className='text-primary' src={passport} alt="" />
+                            </div>
+                            <div>
+                            <p>Passport</p>
+                            <span className='m-0 p-0 text-gray-500 text-[10px]'>Hassle-free passport services, guaranteed.</span>
+                            </div>
+                            
+                          </div>
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+
               <div className='flex items-center gap-1 hover:text-secondary text-white hover:text-secondary transition-all duration-300'>
                  <NavLink to='/contact' aria-label="" className='text-md'>About Us</NavLink>
               </div>
@@ -174,7 +245,7 @@ const Navbar = () => {
           
 
 
-          <div style={{background: "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 92, 186, 1))",
+          <div style={{ background: "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(253, 150, 2, 1))",
           margin: "0 auto"
   }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl z-40 md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center md:flex-row md:text-left lg:flex-row h-[100vh] lg:h-[400px] overflow-hidden
     ${isMenuOpened ? "opacity-100 translate-y-0 visible pointer-events-auto z-40" : "opacity-0 -translate-y-5 invisible pointer-events-none z-40"} 
@@ -187,7 +258,7 @@ const Navbar = () => {
        index === 0 ? "justify-start mt-[1rem]" : ""
      }`}
    >
-      <div className="flex hover:text-gray-200 text-white items-center w-[100%] mt-5 justify-between hover:text-secondary transition-all duration-300 justify-center md:justify-start">
+      <div className="flex hover:text-gray-200 text-white items-center w-[100%] mt-5 hover:text-secondary transition-all duration-300 justify-center md:justify-start">
         <NavLink to={path} className="block py-1 text-md font-bold" aria-label={ariaLabel}> 
 
           {link}
@@ -195,7 +266,7 @@ const Navbar = () => {
         {icon && (
           
           <span
-            className={`cursor-pointer cursor-pointer md:hidden text-3xl focus:outline-none transition-transform duration-300 ease-in-out ${
+            className={`cursor-pointer md:hidden text-xl focus:outline-none transition-transform duration-300 ease-in-out ${
               openSubmenuIndex === index ? "rotate-180" : "rotate-0"
             }`}
             onMouseEnter={() => handleMouseEnter(index)}
@@ -220,13 +291,13 @@ const Navbar = () => {
   }}
 >      
         {submenu && (
-          <ul className="space-y-2 ml-5 md:ml-0 transition-all duration-500 ease-in">
+          <ul className="space-y-2 transition-all duration-500 ease-in">
             {submenu.map(({ link, path }) => (
               <NavLink
                 key={link}
                 to={path}
                 aria-label={ariaLabel}
-                className="block text-left text-sm py-2 hover:rounded-md transition-all duration-500 text-white hover:text-secondary"
+                className="block text-center text-sm py-2 hover:rounded-md transition-all duration-500 text-white hover:text-secondary"
               >
                 {link}
               </NavLink>
@@ -237,7 +308,7 @@ const Navbar = () => {
 
     </ul>
   ))}
-  <NavLink to='/login' style={{marginTop: "3rem"}} className='bg-secondary py-3 mx-[5rem] rounded-full text-primary hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</NavLink>
+  <NavLink to='/login' style={{marginTop: "3rem"}} className='bg-secondary py-3 mx-[5rem] rounded-full text-white hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</NavLink>
 </div>
 
         </nav> 
