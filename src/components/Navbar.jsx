@@ -247,18 +247,18 @@ const Navbar = () => {
 
           <div style={{ background: "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(253, 150, 2, 1))",
           margin: "0 auto"
-  }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl z-40 md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center md:flex-row md:text-left lg:flex-row h-[100vh] lg:h-[400px] overflow-hidden
+  }}  className={`space-y-4 pt-0 absolute left-0 rounded-bl-3xl rounded-br-3xl z-40 md:pb-5 w-[100%] lg:w-[100%] flex flex-col text-center md:flex-col lg:flex-col h-[100vh] lg:h-[400px] overflow-hidden
     ${isMenuOpened ? "opacity-100 translate-y-0 visible pointer-events-auto z-40" : "opacity-0 -translate-y-5 invisible pointer-events-none z-40"} 
     transition-all duration-500 ease-in-out`}
 >
          {navItems.map(({ link, path, icon, submenu, ariaLabel }, index) => (
      <ul
      key={link}
-     className={`px-0 lg:px-14 space-y-2 mx-auto text-center md:text-left w-[100%] px-4 z-40 ${
-       index === 0 ? "justify-start mt-[1rem]" : ""
+     className={`px-0 lg:px-14 space-y-2 mx-auto text-center md:text-center w-[100%] px-4 z-40 ${
+       index === 0 ? "justify-center mt-[1rem]" : ""
      }`}
    >
-      <div className="flex hover:text-gray-200 text-white items-center w-[100%] mt-5 hover:text-secondary transition-all duration-300 justify-center md:justify-start">
+      <div className="flex hover:text-gray-200 text-white items-center w-[100%] mt-5 hover:text-secondary transition-all duration-300 justify-center md:justify-center">
         <NavLink to={path} className="block py-1 text-md font-bold" aria-label={ariaLabel}> 
 
           {link}
@@ -266,7 +266,7 @@ const Navbar = () => {
         {icon && (
           
           <span
-            className={`cursor-pointer md:hidden text-xl focus:outline-none transition-transform duration-300 ease-in-out ${
+            className={`cursor-pointer text-xl focus:outline-none transition-transform duration-300 ease-in-out ${
               openSubmenuIndex === index ? "rotate-180" : "rotate-0"
             }`}
             onMouseEnter={() => handleMouseEnter(index)}
@@ -277,7 +277,7 @@ const Navbar = () => {
           </span>
         )}
       </div>
-      <hr className="hidden md:block" style={{ margin: "0" }} />
+      <hr className="" style={{ margin: "0" }} />
       {/* Render Submenu */}
       <div
   className={`overflow-hidden transition-[max-height, opacity] duration-500 ease-in-out ${
