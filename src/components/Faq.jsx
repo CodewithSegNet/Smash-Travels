@@ -43,11 +43,11 @@ const FAQ = () => {
         <div className="shadow-md rounded-xl p-[2rem] w-full">
           <ul className="p-0 flex gap-[40px] flex-col lg:flex-row">
             <div className="flex-1">
-              <h2 className="text-left mb-[24px] text-xl font-bold">FAQ's.</h2>
+              <h2 className="text-left mb-[24px] text-xl text-regular font-meutasRegular">FAQ's.</h2>
               {faqData.map((item, index) => (
                 <li
                   key={index}
-                  className={`flex items-center justify-between py-[25px] px-[24px] mb-[10px] border rounded-md text-regular font-semibold transition duration-300 cursor-pointer ${
+                  className={`flex items-center text-sm md:text-md justify-between py-[25px] px-[10px] md:px-[24px] mb-[10px] border rounded-md font-meutasRegular text-regular font-semibold transition duration-300 cursor-pointer ${
                     activeIndex === index
                       ? "bg-regular text-white"
                       : "hover:text-white hover:bg-regular"
@@ -56,8 +56,10 @@ const FAQ = () => {
                 >
                   <h3 style={{ margin: 0 }}>{item.question}</h3>
                   {activeIndex === index && (
-                    <div className="w-6 h-6 border-4 rounded-full flex items-center justify-center text-primary border-primary text-2xl font-black">
-                      
+                    <div>
+                      <div className="w-5 h-5 md:w-6 md:h-6 border-4 rounded-full flex items-center justify-center text-primary border-primary text-2xl">
+
+                      </div>
                     </div>
                   )}
                 </li>
@@ -66,9 +68,9 @@ const FAQ = () => {
 
             {/* Card for Answer */}
             <div className="flex-1">
-              <h2 className="text-left mb-4 text-xl font-bold">Ans.</h2>
-              <div className="border rounded-xl bg-primary p-5 shadow-lg min-h-[500px]">
-                <p className="text-xl leading-[34px] mt-[30px] text-white">
+              <h2 className="text-left mb-4 text-xl text-regular font-meutasRegular">Ans.</h2>
+              <div className="border rounded-xl bg-primary p-5 shadow-lg min-h-[300px] md:min-h-[500px]">
+                <p className="md:text-[32px] leading-[42px] md:leading-[54px] font-meutasRegular md:mt-[30px] text-white">
                   {faqData[activeIndex].answer}
                 </p>
               </div>

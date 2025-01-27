@@ -1,29 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.cdnfonts.com/css/euclid-circular-b');           
-
-
-
-@font-face{
-  font-family: "Meutas";
-  src: url("../public/fonts/meutas/Meutas-Bold.otf")
-}
 
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'font-meutus', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 }
 
 html, body{
   min-width: 230px;
   overflow-x: hidden;
 }
+
 
 
 .inter {

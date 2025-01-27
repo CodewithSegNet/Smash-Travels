@@ -8,6 +8,8 @@ import airplane from '../assets/Vector2.svg'
 import visa from '../assets/carbon_stamp.svg'
 import passport from '../assets/la_passport.svg'
 
+import car from '../assets/iconoir_car.svg'
+import airport from '../assets/airport-rounded.svg'
 
 
 
@@ -24,13 +26,16 @@ const Navbar = () => {
     },
     {
       link: "Services",
-      path: "/services",
+      path: "",
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Explore top-rated visa services and affordable travel packages with Smash Travels",
       submenu: [
         { link: "Flight", path: "/flight", ariaLabel: "Book affordable flights for your next adventure" },
         { link: "Work Visa", path: "/work", ariaLabel: "Hassle-free work visa application services" },
         { link: "Passport", path: "/passport", ariaLabel: "Quick and easy passport processing" },
+        { link: "Airport Pickup", path: "/Airport-pickup", ariaLabel: "Quick and easy passport processing" },
+        { link: "Car Rental", path: "/Car-rental", ariaLabel: "Quick and easy passport processing" },
+
       ],
     },
     {
@@ -112,26 +117,26 @@ const Navbar = () => {
       <div
           className="flex justify-between z-20" 
 >
-          <div className="flex items-center justify-between w-[100%] md:pb-3 md:pb-2">
+          <div className="flex items-center justify-between w-[100%] md:pb-3">
             <NavLink
               to="/"
               className="h-[43px] items-center justify-center flex rounded-md"
               aria-label="Smash Travels home page"
             >
               <img src={logo} alt="Smash Travels - Affordable travel packages and visa services" className=" w-[50px] md:w-[64px] mb-3" />
-              <span className='w-full md:text-[24px] font-black flex'>Smash Travels</span>
+              <span className='w-full font-meutas md:text-[24px] font-black flex'>Smash Travels</span>
             </NavLink>
             <div className=' flex lg:w-[40%] text-[18px] font-medium'>
-                <ul className='hidden items-center md:hidden lg:flex w-full items-center justify-between'> 
+                <ul className='hidden md:hidden lg:flex w-full items-center justify-between'> 
                 <div className='flex items-center gap-1 text-white hover:text-secondary  transition-all duration-300'>
                 <NavLink to='/' aria-label="Book your next affordable travel package with Smash Travels" className='text-md' >Home</NavLink>
               </div>
               <div className="relative">
                   <div
-                    className="flex items-center gap-1 hover:text-secondary justify-center text-white hover:text-secondary transition-all duration-300 cursor-pointer"
+                    className="flex items-center gap-1  justify-center text-white hover:text-secondary transition-all duration-300 cursor-pointer"
                     onClick={() => handleDropdownToggle(1)}
                   >
-                    <NavLink to="/contact" className="text-md">
+                    <NavLink to="" className="text-md">
                       Services
                     </NavLink>
                     <BiChevronDown
@@ -187,15 +192,43 @@ const Navbar = () => {
                           </div>
                           </NavLink>
                         </li>
+                        <li className="px-4 py-2 hover:bg-gray-100">
+                        <NavLink to="/service2" className="text-black">
+                          <div className='flex items-center'>
+                            <div className='w-10 h-6 pr-3'>
+                              <img className='text-primary' src={airport} alt="" />
+                            </div>
+                            <div>
+                            <p>Airport Pickup</p>
+                            <span className='m-0 p-0 text-gray-500 text-[10px]'>Hassle-free passport services, guaranteed.</span>
+                            </div>
+                            
+                          </div>
+                          </NavLink>
+                        </li>
+                        <li className="px-4 py-2 hover:bg-gray-100">
+                        <NavLink to="/service2" className="text-black">
+                          <div className='flex items-center'>
+                            <div className='w-10 h-6 pr-3'>
+                              <img className='text-primary' src={car} alt="" />
+                            </div>
+                            <div>
+                            <p>Car Rental</p>
+                            <span className='m-0 p-0 text-gray-500 text-[10px]'>Hassle-free passport services, guaranteed.</span>
+                            </div>
+                            
+                          </div>
+                          </NavLink>
+                        </li>
                       </ul>
                     </div>
                   )}
                 </div>
 
-              <div className='flex items-center gap-1 hover:text-secondary text-white hover:text-secondary transition-all duration-300'>
+              <div className='flex items-center gap-1 hover:text-secondary text-white transition-all duration-300'>
                  <NavLink to='/contact' aria-label="" className='text-md'>About Us</NavLink>
               </div>
-              <div className='flex items-center gap-1 hover:text-secondary text-white hover:text-secondary transition-all duration-300'>
+              <div className='flex items-center gap-1 hover:text-secondary text-white transition-all duration-300'>
                  <NavLink to='/contact' aria-label="" className='text-md'>Contact Us</NavLink>
               </div>
                 </ul>
@@ -254,11 +287,11 @@ const Navbar = () => {
          {navItems.map(({ link, path, icon, submenu, ariaLabel }, index) => (
      <ul
      key={link}
-     className={`px-0 lg:px-14 space-y-2 mx-auto text-center md:text-center w-[100%] px-4 z-40 ${
+     className={`lg:px-14 space-y-2 mx-auto text-center md:text-center w-[100%] px-4 z-40 ${
        index === 0 ? "justify-center mt-[1rem]" : ""
      }`}
    >
-      <div className="flex hover:text-gray-200 text-white items-center w-[100%] mt-5 hover:text-secondary transition-all duration-300 justify-center md:justify-center">
+      <div className="flex  text-white items-center w-[100%] mt-5 hover:text-secondary transition-all duration-300 justify-center md:justify-center">
         <NavLink to={path} className="block py-1 text-md font-bold" aria-label={ariaLabel}> 
 
           {link}
@@ -277,7 +310,6 @@ const Navbar = () => {
           </span>
         )}
       </div>
-      <hr className="" style={{ margin: "0" }} />
       {/* Render Submenu */}
       <div
   className={`overflow-hidden transition-[max-height, opacity] duration-500 ease-in-out ${
@@ -308,7 +340,7 @@ const Navbar = () => {
 
     </ul>
   ))}
-  <NavLink to='/login' style={{marginTop: "3rem"}} className='bg-secondary py-3 mx-[5rem] rounded-full text-white hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Login</NavLink>
+  <NavLink to='/login' style={{marginTop: "3rem"}} className='bg-secondary py-3 mx-[5rem] rounded-full text-white hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Get Started</NavLink>
 </div>
 
         </nav> 

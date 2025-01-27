@@ -2,6 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'Meutas Bold';
+  src: url('/fonts/Meutas-Font/Meutas/meutas-bold-webfont.woff2') format('woff2');
+  font-weight: 900 !important;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Meutas Regular';
+  src: url('/fonts/Meutas-Font/Meutas/meutas-regular-webfont.woff2') format('woff2');
+  font-weight: 400 !important;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Meutas Thin';
+  src: url('/fonts/Meutas-Font/Meutas/meutas-thin-webfont.woff2') format('woff2');
+  font-weight: 400 !important;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Meutas Light';
+  src: url('/fonts/Meutas-Font/Meutas/meutas-light-webfont.woff2') format('woff2');
+  font-weight: 400 !important;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Meutas Black';
+  src: url('/fonts/Meutas-Font/Meutas/meutas-black-webfont.woff2') format('woff2');
+  font-weight: 400 !important;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: 'Meutas Bold', sans-serif;
+}
+
+
 .react-datepicker__input-container input:focus {
   @apply outline-none 
     border-none 
@@ -13,13 +62,11 @@
   align-items: center !important;
 }
 
-
-
 input[type="radio"] {
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid black;
+  border: 2px solid #c8c8c8;
   border-radius: 50%;
   outline: none;
   background-color: white;
@@ -43,10 +90,10 @@ input[type="radio"]:checked {
 /* Style the checkbox container */
 .custom-checkbox .checkmark {
   display: inline-block;
-  width: 24px; /* Adjust size */
-  height: 24px; /* Adjust size */
+  width: 24px; 
+  height: 24px; 
   border: 2px solid #ccc;
-  border-radius: 4px; /* Rounded corners */
+  border-radius: 4px; 
   background-color: transparent;
   cursor: pointer;
   position: relative;

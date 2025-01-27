@@ -4,38 +4,49 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import image from "../assets/image_.png";
 import img1 from "../assets/image_fx_.png"
+import arrow from "../assets/arrow-up-broken.svg"
 import image1 from "../assets/image6.png";
 import logo1 from "../assets/image7.png"
 import img2 from "../assets/image_fx_new.png";
-
 import logo2 from "../assets/image8.png"
+import partner from "../assets/image11.png"
+import partner2 from "../assets/image6.png"
+import partner3 from "../assets/image7.png"
+import partner4 from "../assets/image8.png"
+import partner5 from "../assets/image9.png"
+import partner6 from "../assets/partnerimage.png"
+import partner7 from "../assets/partnerimage1.png"
 
 
 
 
-const SlideCard = ({ image1, image2, title, location, fare, price, slach }) => {
+const SlideCard = ({ image1, image2, title, firstlocation, secondlocation, fare, price, slach }) => {
   return (
-    <div className="w-full border rounded-lg mt-10 flex p-4 py-6 gap-4 bg-white shadow-sm">
+    <div className="w-full border rounded-lg mt-10 flex flex-col md:flex-row p-4 py-6 gap-4 bg-white shadow-sm">
       {/* Image Section */}
-      <div className="flex max-h-[224px] w-[35%]">
+      <div className="flex max-h-[224px] md:w-[35%]">
         <img src={image1} alt="Image 1" className="rounded-lg object-cover w-full" />
       </div>
 
       {/* Content Section */}
-      <div className="flex flex-col gap-3 w-[65%]">
+      <div className="flex flex-col gap-3 md:w-[65%]">
         {/* Title and Icon */}
         <div className="flex items-center justify-between">
           <h3 className="text-sm font-light">{title}</h3>
-          <img src={image2} alt="Image 2" className="rounded-md object-contain w-[30%]" />
+          <img src={image2} alt="Image 2" className="rounded-md object-contain w-[30%] max-h-[25px]" />
         </div>
 
         {/* Location and Fare */}
-        <p className="text-regular font-bold text-lg">{location}</p>
-        <p className="text-regular font-medium">{fare}</p>
+        <div className="flex text-regular font-bold">
+        <p className="text-regular font-bold text-md md:text-lg">{firstlocation}</p>
+        <img src={arrow} className="px-2"/>
+        <p className="text-regular font-bold text-md md:text-lg">{secondlocation}</p>
+        </div>
+        <p className="text-regular text-sm font-medium">{fare}</p>
 
         {/* Price and Slash */}
-        <div className="flex items-center justify-between w-[160px]">
-          <p className="text-regular font-bold text-lg">{price}</p>
+        <div className="flex items-center justify-between w-[180px]">
+          <p className="text-regular text-sm font-bold md:text-lg">{price}</p>
           <p className="text-sm line-through">{slach}</p>
         </div>
 
@@ -57,7 +68,8 @@ function Responsive() {
       image1: image,
       image2: image1,
       title: "Round Trip",
-      location: "Abuja -> Lagos",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
       fare: "Flight Fare",
       price: "₦630,000",
       slach: "₦700,000",
@@ -66,16 +78,18 @@ function Responsive() {
       image1: img1,
       image2: logo1,
       title: "Round Trip",
-      location: "Lagos -> Abuja",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
       fare: "Flight Fare",
       price: "₦630,000",
       slach: "₦700,000",
     },
     {
-      image1: img2,
+      image1: img1,
       image2: logo2,
       title: "Round Trip",
-      location: "Lagos -> Abuja",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
       fare: "Flight Fare",
       price: "₦630,000",
       slach: "₦700,000",
@@ -85,18 +99,30 @@ function Responsive() {
   const slides2 = [
     {
       image1: image,
-      image2: image1,
+      image2: partner7,
       title: "Round Trip",
-      location: "Abuja -> Lagos",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
       fare: "Flight Fare",
       price: "₦630,000",
       slach: "₦700,000",
     },
     {
       image1: image,
-      image2: image1,
+      image2: partner,
       title: "Round Trip",
-      location: "Abuja -> Lagos",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
+      fare: "Flight Fare",
+      price: "₦630,000",
+      slach: "₦700,000",
+    },
+    {
+      image1: image,
+      image2: partner2,
+      title: "Round Trip",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
       fare: "Flight Fare",
       price: "₦630,000",
       slach: "₦700,000",
@@ -169,8 +195,8 @@ function Responsive() {
   };
 
   return (
-    <div className="slider-container p-10 bg-gray-100 mb-[6rem] mt-[5rem]">
-      <h1 className="text-3xl font-bold">Best-Selling Flight Offers</h1>
+    <div className="font-meutasRegular slider-container p-10 bg-gray-100 mb-[4rem] md:mb-[6rem] mt-[5rem]">
+      <h1 className="font-meutasRegular text-regular text-2xl md:text-3xl font-bold">Best-Selling Flight Offers</h1>
       <Slider {...settings}>
         {slides1.map((slide, index) => (
           <div key={index} className="px-3">
@@ -178,7 +204,8 @@ function Responsive() {
               image1={slide.image1}
               image2={slide.image2}
               title={slide.title}
-              location={slide.location}
+              firstlocation={slide.firstlocation}
+              secondlocation={slide.secondlocation}
               fare={slide.fare}
               price={slide.price}
               slach={slide.slach}
@@ -195,7 +222,8 @@ function Responsive() {
               image1={slide.image1}
               image2={slide.image2}
               title={slide.title}
-              location={slide.location}
+              firstlocation={slide.firstlocation}
+              secondlocation={slide.secondlocation}
               fare={slide.fare}
               price={slide.price}
               slach={slide.slach}

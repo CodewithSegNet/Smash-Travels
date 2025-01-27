@@ -42,9 +42,9 @@ const read = [
 
 const Whychooseus = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto my-[6rem]">
+    <div className="max-w-screen-2xl mx-auto my-[3rem] md:my-[6rem]">
       <div>
-        <h2 className="text-center text-3xl lg:text-4xl text-regular font-bold mb-8">Why Choose Us</h2>
+        <h2 className="text-center font-meutasRegular text-2xl lg:text-4xl text-regular font-bold mb-4 md:mb-8">Why Choose Us</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {read.map((item, index) => (
@@ -54,8 +54,8 @@ const Whychooseus = () => {
           >
             <img src={item.img} alt={item.title} className="w-full h-52 object-contain rounded-t-lg" />
             <div className="pt-4 px-2">
-              <h3 className="font-medium text-regular text-xl">{item.title}</h3>
-              <p className="pt-2 leading-[1.5] text-regular">{item.description}</p>
+              <h3 className="font-semibold font-meutasBold text-regular md:text-xl">{item.title}</h3>
+              <p className="pt-2 leading-[1.5] font-meutasLight text-sm md:text-md text-regular">{item.description}</p>
             </div>
           </div>
         ))}

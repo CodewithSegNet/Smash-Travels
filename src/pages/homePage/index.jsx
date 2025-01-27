@@ -1,9 +1,12 @@
-import backgroundImage from "../../assets/heroimage.jpg";
+import backgroundImage from "../../assets/travels1.webp";
+import backgroundImageMedium from "../../assets/travels2.webp";
+import backgroundImageSmall from "../../assets/travels3.webp";
+
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 import Hero from "../../components/Hero";
 import Navbar from "../../components/Navbar";
 import Card from "../../components/BoardCard";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Ads from "../../components/Ads";
 import Bookings from "../../components/BookingsPartner"
 import Cards from "../../components/Card";
@@ -24,7 +27,7 @@ const HomePage = () => {
   };
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>Smash Travels | Home</title>
         <meta
@@ -57,32 +60,28 @@ const HomePage = () => {
         <link rel="canonical" href="https://www.smashtravels.com" />
       </Helmet>
 
-        <div style={HeroImg}>
-          <img
-            src={backgroundImage}
-            alt="Explore travel packages and visa services with Smash Travels"
-            style={{
-              ...HeroImg,
-              position: "absolute",
-              top: "0",
-              left: "0",
-              zIndex: "-1",
-            }}
-            loading="eager"
-          />
-          <Navbar />
-          <Hero />
-          <Card />
-          <Ads />
-          <Bookings/>
-          <Cards />
-          <Whychooseus/>
-          <Testimonies/>
-          <Faq/>
-          <Footer/>
-          </div>
-
-    </>
+         {/* Hero Section */}
+         <div className="relative w-full  md:max-h-[806px]">
+        <img
+          src={backgroundImage}
+          srcSet={`${backgroundImageSmall} 720w, ${backgroundImageMedium} 1440w, ${backgroundImage} 2880w`}
+          sizes="(min-width: 2880px) 2880px, 100vw"
+          alt="Explore travel packages and visa services with Smash Travels"
+          className="absolute object-cover w-full h-[450px] md:h-[620px] lg:h-full object-fit inset-0"
+          loading="eager"
+        />
+        <Navbar />
+        <Hero />
+        <Card />
+        <Ads />
+        <Bookings />
+        <Cards />
+        <Whychooseus />
+        <Testimonies />
+        <Faq />
+        <Footer />
+      </div>
+    </HelmetProvider>
   );
 };
 

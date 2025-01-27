@@ -26,7 +26,7 @@ const Carousel = ({ slides, settings }) => {
         whileInView={"show"}
         viewport={{ once: true }}
         ref={ref}
-        className="mx-auto  w-full"
+        className="mx-auto w-full"
       >
         <Slider {...settings}>
           {slides.map((slide, index) => (

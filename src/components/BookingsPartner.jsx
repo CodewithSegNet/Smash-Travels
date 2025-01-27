@@ -105,7 +105,7 @@ const BookingsPartner = () => {
   };
 
   return (
-    <section className="max-w-screen-2xl w-[100%] mx-auto pb-[4rem] px-7">
+    <section className="max-w-screen-2xl w-[100%] mx-auto px-7">
       <div>
         <motion.div
           variants={fadeIn("up", 0.3)}
@@ -113,7 +113,7 @@ const BookingsPartner = () => {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <h1 className="text-3xl lg:text-4xl text-[#393939] font-bold text-center">Successful Bookings</h1>
+          <h1 className="text-2xl lg:text-4xl text-regular font-meutasRegular font-bold text-center">Successful Bookings</h1>
         </motion.div>
 
         <motion.div
@@ -124,7 +124,7 @@ const BookingsPartner = () => {
            viewport={{ once: true }}
            ref={ref}
           onViewportEnter={startCounter}
-          className="py-[5rem] font-black text-center text-7xl text-primary"
+          className="py-[3rem] lg:py-[5rem] font-black text-center text-4xl lg:text-7xl font-meutasBold text-primary"
         >
           <span>+{Math.floor(count).toLocaleString()}</span>
         </motion.div>
@@ -136,7 +136,7 @@ const BookingsPartner = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-      className="text-3xl lg:text-4xl text-[#393939] font-bold text-center">Our Partners</motion.h1>
+      className="text-2xl lg:text-4xl text-regular font-bold font-meutasRegular text-center">Our Partners</motion.h1>
 
       <div className="flex lg:mt-[4rem] md:mt-[3rem] mt-[2rem] w-full">
         <Carousel slides={carouselData1} settings={sliderSettings1}/>

@@ -31,10 +31,14 @@ export default {
       },
       lineHeight: {
         'extra-tight': '1.1px',
-        'extra-loose': '2.5px',
+        'extra-loose': '110px',
       },
       fontFamily: {
-        meutas: ['"Meutas"', 'sans-serif'],
+        meutasRegular: ['Meutas Regular', 'sans-serif'],
+        meutasLight: ['Meutas Light', 'sans-serif'],
+        meutasThin: ['Meutas Thin', 'sans-serif'],
+        meutasBold: ['Meutas Bold', 'sans-serif'],
+        meutasBlack: ['Meutas Black', 'sans-serif'],
       },
     },
   },
