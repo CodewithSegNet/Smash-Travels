@@ -283,7 +283,7 @@ const BoardCard = () => {
    
 
  
- <div className="flex flex-col gap-[24px] w-full lg:w-[25%] border rounded-xl mt-3 nd:mt-0 lg:rounded-r-3xl lg:rounded-l-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
+ <div className="flex flex-col gap-[24px] w-full lg:w-[25%] border rounded-xl mt-3 md:mt-0 lg:rounded-r-3xl lg:rounded-l-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
 
       <span className="text-sm">Passengers</span>
       
