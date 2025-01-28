@@ -227,7 +227,7 @@ const BoardCard = () => {
     <div className="flex">
       <div className="flex flex-col w-full md:w-[50%] gap-[19px] text-sm mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
       <span className="flex items-center">
-          Date
+          Departure
           <img src={Calendar} alt="travels calendar" className="md:mb-1 ml-1" />
         </span>
         
@@ -256,7 +256,7 @@ const BoardCard = () => {
 {tripType === "Round Trip" && (
     <div className="flex flex-col gap-[19px] w-full md:w-[50%] font-meutas text-regular border-l-[2px] lg:rounded-none lg:mb-0 p-2 md:p-3 lg:p-6">
       <span className="flex items-center text-sm">
-        Depature
+        Return
         <img src={Calendar} alt="return calendar" className="md:mb-1 ml-1" />
       </span>
        {/* DatePicker */}
@@ -443,7 +443,7 @@ const BoardCard = () => {
 
     <div className="flex flex-col gap-[18px] w-full lg:w-[30%] border rounded-xl lg:rounded-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
     <span className="flex items-center">
-          Date
+          Departure
           <img src={Calendar} alt="travels calendar" className="md:mb-1 ml-1" />
         </span>
         
