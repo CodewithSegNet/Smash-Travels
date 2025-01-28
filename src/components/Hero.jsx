@@ -12,6 +12,8 @@ const Hero = () => {
         <div
           className="w-[100%] flex flex-col md:mt-0 lg:mt-0 mt-3"
         >
+
+          <div className='hidden md:block'>
           <motion.h1
           variants={fadeIn("up", 0.2)}
           initial="hidden"
@@ -29,6 +31,19 @@ const Hero = () => {
           className="xl:text-7xl font-meutasBold md:text-4xl lg:text-6xl text-3xl text-white">
             Into Reality
           </motion.h1>
+          </div>
+       
+          <div className='block md:hidden'>
+          <motion.h1 
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true }}
+          className="xl:text-7xl font-meutasBold md:text-4xl lg:text-6xl text-3xl text-white">
+                        Turn Your Travel Dreams
+                        Into Reality
+          </motion.h1>
+          </div>
           <motion.h3
           variants={fadeIn("up", 0.6)}
           initial="hidden"

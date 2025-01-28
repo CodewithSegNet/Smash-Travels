@@ -107,7 +107,7 @@ const BoardCard = () => {
       viewport={{ once: true }}
       className="relative bottom-[-30px] lg:bottom-[-20px] text-regular font-meutasRegular max-w-screen-2xl mx-auto mb-8 w-[90%] rounded-[24px] md:min-h-[25rem] lg:min-h-[29rem] shadow-lg bg-white text-sm md:text-md font-medium"
     >
-      <div className="flex flex-wrap items-center w-[100%] md:w-[80%] lg:w-[70%] xl:w-[60%] justify-between p-[2rem] md:p-[2rem]">
+      <div className="flex flex-wrap items-center w-[100%] md:w-[80%] lg:w-[70%] xl:w-[60%] justify-between p-[1rem] md:p-[2rem]">
         {["One Way", "Round Trip", "Multi City"].map((type) => (
           <span className="flex items-center justify-center py-[.8rem] md:py-[0]" key={type}>
             <input
