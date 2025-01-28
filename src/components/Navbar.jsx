@@ -106,7 +106,7 @@ const Navbar = () => {
   return (
     
     <>
-      <nav role='navigation' aria-label="Main Navigation" className={`md:px-14 pb-3 pt-3 relative max-w-screen-2xl mx-auto w-full z-70 text-white px-4 transition-all duration-500 ${
+      <nav role='navigation' aria-label="Main Navigation" className={`md:px-14 pb-5 pt-5 relative max-w-screen-2xl mx-auto w-full z-70 text-white px-4 transition-all duration-500 ${
             isMenuOpened ? "bg-gradient-active" : "bg-transparent"
           }`}
           style={
@@ -124,9 +124,9 @@ const Navbar = () => {
               aria-label="Smash Travels home page"
             >
               <img src={logo} alt="Smash Travels - Affordable travel packages and visa services" className=" w-[50px] md:w-[64px] mb-3" />
-              <span className='w-full font-meutas md:text-[24px] font-black flex'>Smash Travels</span>
+              <span className='w-full font-meutas text-[16px] md:text-[24px] font-black flex'>Smash Travels</span>
             </NavLink>
-            <div className=' flex lg:w-[40%] text-[18px] font-medium'>
+            <div className=' flex lg:w-[40%] md:text-[16px] xl:text-[18px] font-medium'>
                 <ul className='hidden md:hidden lg:flex w-full items-center justify-between'> 
                 <div className='flex items-center gap-1 text-white hover:text-secondary  transition-all duration-300'>
                 <NavLink to='/' aria-label="Book your next affordable travel package with Smash Travels" className='text-md' >Home</NavLink>
@@ -261,7 +261,7 @@ const Navbar = () => {
 
              </div>
             </div>
-            <NavLink to='/login' className='bg-secondary hidden lg:block py-4 px-8 rounded-full text-white bg-opacity-100 hover:bg-opacity-50 hover:text-white hover:opacity-1 transition-all duration-300 border-[5px] border-primary hover:border-white text-lg font-bold'>Get Started</NavLink>
+            <NavLink to='/' className='bg-secondary hidden lg:block py-3 px-6 xl:px-8 rounded-full text-white bg-opacity-100 hover:bg-opacity-50 hover:text-white hover:opacity-1 transition-all duration-300 border-[5px] border-primary hover:border-white text-lg font-bold'>Get Started</NavLink>
 
             </div>
              {/* small screen */}
@@ -340,7 +340,7 @@ const Navbar = () => {
 
     </ul>
   ))}
-  <NavLink to='/login' style={{marginTop: "3rem"}} className='bg-secondary py-3 mx-[5rem] rounded-full text-white hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Get Started</NavLink>
+  <NavLink to='/' style={{marginTop: "3rem"}} className='bg-secondary py-3 mx-[5rem] rounded-full text-white hover:text-white hover:bg-primary text-sm font-semibold md:hidden'>Get Started</NavLink>
 </div>
 
         </nav> 
