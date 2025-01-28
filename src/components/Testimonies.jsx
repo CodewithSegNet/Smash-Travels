@@ -74,6 +74,8 @@ function Testimonies() {
      cssEase: "linear",
     slidesToShow: 4,
     initialSlide: 0,
+    pauseOnHover: true,
+    pauseOnFocus: true,
     responsive: [
       {
         breakpoint: 1024,
