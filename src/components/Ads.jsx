@@ -18,7 +18,7 @@ const Book = () => {
       className="grid w-[100%] lg:w-[100%] text-left lg:grid-cols-3 lg:grid-rows-2 gap-4">
         {/* First Box - Takes full height and width */}
         <div
-          className="col-span-2 row-span-2 bg-cover bg-center h-[388px] md:h-[800px] rounded-3xl p-6 flex flex-col justify-center text-white"
+          className="col-span-2 row-span-2 bg-cover bg-center h-[388px] md:h-[800px] rounded-[20px] p-6 flex flex-col justify-center text-white"
           style={{ backgroundImage: `url(${book})` }}
         >
           <h3 className="font-meutasBold text-4xl md:text-6xl md:p-6 lg:text-7xl leading-normal md:!leading-extra-loose">
@@ -36,7 +36,7 @@ const Book = () => {
 
         {/* Second Box - Stacked on the side */}
         <div
-          className="bg-cover md:col-span-1 md:row-span-1 col-span-2 row-span-2 bg-center rounded-3xl p-6 h-[388px] flex flex-col justify-center text-white"
+          className="bg-cover md:col-span-1 md:row-span-1 col-span-2 row-span-2 bg-center rounded-[20px] p-6 h-[388px] flex flex-col justify-center text-white"
           style={{ backgroundImage: `url(${flight})` }}
         >
 
@@ -50,7 +50,7 @@ const Book = () => {
 
         {/* Third Box - Stacked below the second */}
         <div
-          className="md:col-span-1 md:row-span-1 col-span-2 row-span-2 bg-cover bg-center rounded-3xl p-6 h-[388px] flex flex-col justify-center text-white"
+          className="md:col-span-1 md:row-span-1 col-span-2 row-span-2 bg-cover bg-center rounded-[20px] p-6 h-[388px] flex flex-col justify-center text-white"
           style={{ backgroundImage: `url(${phone})` }}
         >
         </div>

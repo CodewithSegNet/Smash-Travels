@@ -22,10 +22,10 @@ import partner7 from "../assets/partnerimage1.png"
 
 const SlideCard = ({ image1, image2, title, firstlocation, secondlocation, fare, price, slach }) => {
   return (
-    <div className="w-full border rounded-lg mt-10 flex flex-col md:flex-row p-4 py-6 gap-4 bg-white shadow-sm">
+    <div className="w-full border rounded-[10px] mt-10 flex flex-col md:flex-row p-4 py-6 gap-4 bg-white shadow-sm">
       {/* Image Section */}
       <div className="flex max-h-[224px] md:w-[35%]">
-        <img src={image1} alt="Image 1" className="rounded-lg object-cover w-full" />
+        <img src={image1} alt="Image 1" className="rounded-[10px] object-cover w-full" />
       </div>
 
       {/* Content Section */}

@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import { useState, useRef } from "react";
 
 const FAQ = () => {
+  const answerRef = useRef(null);
+
   const [faqData] = useState([
     {
       question: "How do I book a flight with Smash Travels?",
@@ -32,9 +34,17 @@ const FAQ = () => {
   // Initialize with the first answer and index
   const [activeIndex, setActiveIndex] = useState(0);
 
+  
+
   const handleQuestionClick = (index) => {
     setActiveIndex(index);
+
+    // Scroll to the answer section on tab and mobile screens
+    if (window.innerWidth <= 1024) {
+      answerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
+
 
   return (
     <section>
@@ -57,9 +67,7 @@ const FAQ = () => {
                   <h3 style={{ margin: 0 }}>{item.question}</h3>
                   {activeIndex === index && (
                     <div>
-                      <div className="w-5 h-5 md:w-6 md:h-6 border-4 rounded-full flex items-center justify-center text-primary border-primary text-2xl">
-
-                      </div>
+                      <div className="w-5 h-5 md:w-6 md:h-6 border-4 rounded-full flex items-center justify-center text-primary border-primary text-2xl"></div>
                     </div>
                   )}
                 </li>
@@ -67,9 +75,14 @@ const FAQ = () => {
             </div>
 
             {/* Card for Answer */}
-            <div className="flex-1">
+            <div 
+              ref={answerRef}
+            className="flex-1">
               <h2 className="text-left mb-4 text-xl text-regular font-meutasRegular">Ans.</h2>
-              <div className="border rounded-xl bg-primary p-5 shadow-lg min-h-[300px] md:min-h-[500px]">
+              <div
+              
+                className="border rounded-xl bg-primary p-5 shadow-lg min-h-[300px] md:min-h-[500px]"
+              >
                 <p className="md:text-[32px] leading-[42px] md:leading-[54px] font-meutasRegular md:mt-[30px] text-white">
                   {faqData[activeIndex].answer}
                 </p>
