@@ -267,7 +267,7 @@ function Responsive() {
     whileInView={"show"}
     viewport={{ once: true}}
 
-    className="font-meutasRegular slider-container p-14 bg-gray-100 mb-[4rem] md:mb-[5rem] mt-[4rem]">
+    className="font-meutasRegular slider-container p-8 md:p-12 bg-gray-100 mb-[4rem] md:mb-[5rem] mt-[4rem]">
       <h1 className="font-meutasRegular text-regular text-2xl md:text-3xl font-bold">Best-Selling Flight Offers</h1>
       <Slider {...settings}>
         {slides1.map((slide, index) => (
