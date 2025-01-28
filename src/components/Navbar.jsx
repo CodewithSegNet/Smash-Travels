@@ -261,7 +261,7 @@ const Navbar = () => {
 
              </div>
             </div>
-            <NavLink to='/' className='bg-secondary hidden lg:block py-3 px-6 xl:px-8 rounded-full text-white bg-opacity-100 hover:bg-opacity-50 hover:text-white hover:opacity-1 transition-all duration-300 border-[5px] border-primary hover:border-white text-lg font-bold'>Get Started</NavLink>
+            <NavLink to='/' className='bg-secondary hidden lg:block py-2 px-6 xl:px-8 rounded-full text-white bg-opacity-100 hover:bg-opacity-50 hover:text-white hover:opacity-1 transition-all duration-300 border-[3px] border-primary hover:border-white text-lg font-bold'>Get Started</NavLink>
 
             </div>
              {/* small screen */}
