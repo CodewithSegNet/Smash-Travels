@@ -125,7 +125,7 @@ const BoardCard = () => {
   <div className="relative inline-block text-left">
   {/* Dropdown Trigger */}
   <span
-    className="flex items-center justify-between cursor-pointer w-[250px] h-[50px] border border-gray-300 rounded-md px-3 bg-white"
+    className="flex items-center justify-between cursor-pointer w-[301px] md:w-[250px] h-[50px] border border-gray-300 rounded-md px-3 bg-white"
     onClick={toggleDropdown}
   >
     <p className="flex items-center overflow-hidden whitespace-nowrap text-ellipsis">
@@ -140,7 +140,7 @@ const BoardCard = () => {
 
   {/* Dropdown Menu */}
   {isOpen && (
-    <div className="absolute border border-1 border-primary left-0 mt-2 w-[200px] bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
+    <div className="absolute border border-1 border-primary left-0 mt-2 md:w-[200px] bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
       <ul className="py-1">
         <li
           className="text-regular hover:bg-gray-100 cursor-pointer px-4 py-2"
