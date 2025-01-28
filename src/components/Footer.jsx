@@ -89,14 +89,14 @@ const Footer = () => {
                   to="/fleets"
                   className="block hover:text-secondary text-gray-200"
                 >
-                  +234 9097403297 (Abuja Branch)
+                  02013309103
                 </Link>
-                <Link
+                {/* <Link
                   to="/franchise"
                   className="block hover:text-secondary text-gray-200"
                 >
                   +234 8144824339 (Lagos Branch)
-                </Link>
+                </Link> */}
               </ul>
             </div>
           </div>
