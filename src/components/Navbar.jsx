@@ -7,7 +7,6 @@ import { NavLink, Link } from 'react-router-dom';
 import airplane from '../assets/Vector2.svg'
 import visa from '../assets/carbon_stamp.svg'
 import passport from '../assets/la_passport.svg'
-
 import car from '../assets/iconoir_car.svg'
 import airport from '../assets/airport-rounded.svg'
 
@@ -291,7 +290,11 @@ const Navbar = () => {
        index === 0 ? "justify-center mt-[1rem]" : ""
      }`}
    >
-      <div className="flex  text-white items-center w-[100%] mt-5 hover:text-secondary transition-all duration-300 justify-center md:justify-center">
+      <div 
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleDropdownToggle(index)}
+      className="flex text-white items-center w-[100%] mt-5 hover:text-secondary transition-all duration-300 justify-center md:justify-center">
         <NavLink to={path} className="block py-1 text-md font-bold" aria-label={ariaLabel}> 
 
           {link}
@@ -316,7 +319,7 @@ const Navbar = () => {
     openSubmenuIndex === index
       ? "opacity-100 visible max-h-96"
       : "opacity-0 invisible max-h-0"
-  } md:visible md:opacity-100 md:max-h-96`}
+  } lg:visible lg:opacity-100 lg:max-h-96`}
 
   style={{
     transition: `max-height 0.5s ease-in-out, opacity 0.3s ease-in-out`,

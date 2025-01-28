@@ -216,6 +216,8 @@ function Responsive() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
+
         },
       },
     ],
@@ -249,6 +251,7 @@ function Responsive() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          
         },
       },
     ],
