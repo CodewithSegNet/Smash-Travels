@@ -16,6 +16,10 @@ import partner4 from "../assets/image8.png"
 import partner5 from "../assets/image9.png"
 import partner6 from "../assets/partnerimage.png"
 import partner7 from "../assets/partnerimage1.png"
+import { fadeIn } from '../variants'
+import { motion } from 'framer-motion';
+
+
 
 
 
@@ -217,7 +221,6 @@ function Responsive() {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
-
         },
       },
     ],
@@ -258,7 +261,13 @@ function Responsive() {
   };
 
   return (
-    <div className="font-meutasRegular slider-container p-10 bg-gray-100 mb-[4rem] md:mb-[5rem] mt-[4rem]">
+    <motion.div 
+    variants={fadeIn("up", 0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{ once: true}}
+
+    className="font-meutasRegular slider-container p-14 bg-gray-100 mb-[4rem] md:mb-[5rem] mt-[4rem]">
       <h1 className="font-meutasRegular text-regular text-2xl md:text-3xl font-bold">Best-Selling Flight Offers</h1>
       <Slider {...settings}>
         {slides1.map((slide, index) => (
@@ -296,7 +305,7 @@ function Responsive() {
         ))}
       </Slider>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

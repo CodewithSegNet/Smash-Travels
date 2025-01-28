@@ -5,6 +5,9 @@ import img2 from "../assets/image_fx_27.png"
 import img3 from "../assets/image_fx_29.png"
 import img4 from "../assets/image_fx_30.png"
 import img5 from "../assets/image_fx_31.png"
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants'
+
 
 
 const read = [
@@ -42,7 +45,12 @@ const read = [
 
 const Whychooseus = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto my-[3rem] md:my-[4rem]">
+    <motion.div 
+       variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true}}
+    className="max-w-screen-2xl mx-auto my-[3rem] md:my-[4rem]">
       <div>
         <h2 className="text-center font-meutasRegular text-2xl lg:text-4xl text-regular font-bold mb-4 md:mb-8">Why Choose Us</h2>
       </div>
@@ -60,7 +68,7 @@ const Whychooseus = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

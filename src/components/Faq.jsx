@@ -1,4 +1,6 @@
 import { useState, useRef } from "react";
+import { fadeIn } from '../variants'
+import { motion } from 'framer-motion';
 
 const FAQ = () => {
   const answerRef = useRef(null);
@@ -48,7 +50,12 @@ const FAQ = () => {
 
   return (
     <section>
-      <div className="flex gap-5 my-[5rem] items-start max-w-screen-2xl mx-auto px-6">
+      <motion.div 
+         variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true}}
+      className="flex gap-5 my-[5rem] items-start max-w-screen-2xl mx-auto px-6">
         {/* Card for Questions */}
         <div className="shadow-md rounded-xl p-[2rem] w-full">
           <ul className="p-0 flex gap-[40px] flex-col lg:flex-row">
@@ -90,7 +97,7 @@ const FAQ = () => {
             </div>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
