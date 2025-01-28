@@ -124,13 +124,13 @@ const BookingsPartner = () => {
            viewport={{ once: true }}
            ref={ref}
           onViewportEnter={startCounter}
-          className="py-[3rem] lg:py-[5rem] font-black text-center text-4xl lg:text-7xl font-meutasBold text-primary"
+          className="py-[3rem] lg:py-[3.5rem] font-black text-center text-4xl lg:text-7xl font-meutasBold text-primary"
         >
           <span>+{Math.floor(count).toLocaleString()}</span>
         </motion.div>
 
       </div>
-      <div className="items-center mt-12 text-center">
+      <div className="items-center mt-3 text-center">
       <motion.h1
           variants={fadeIn("down", 0.3)}
           initial="hidden"
@@ -138,7 +138,7 @@ const BookingsPartner = () => {
           viewport={{ once: true }}
       className="text-2xl lg:text-4xl text-regular font-bold font-meutasRegular text-center">Our Partners</motion.h1>
 
-      <div className="flex lg:mt-[4rem] md:mt-[3rem] mt-[2rem] w-full">
+      <div className="flex lg:mt-[3.5rem] md:mt-[3rem] mt-[2rem] w-full">
         <Carousel slides={carouselData1} settings={sliderSettings1}/>
       </div>
     </div>

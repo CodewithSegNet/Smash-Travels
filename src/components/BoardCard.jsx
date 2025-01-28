@@ -107,7 +107,7 @@ const BoardCard = () => {
       viewport={{ once: true }}
       className="relative bottom-[-30px] lg:bottom-[-20px] text-regular font-meutasRegular max-w-screen-2xl mx-auto mb-8 w-[90%] rounded-[24px] md:min-h-[25rem] lg:min-h-[29rem] shadow-lg bg-white text-sm md:text-md font-medium"
     >
-      <div className="flex flex-wrap items-center w-[100%] lg:w-[80%] justify-between p-[2rem] md:p-[3rem]">
+      <div className="flex flex-wrap items-center w-[100%] md:w-[80%] lg:w-[70%] xl:w-[60%] justify-between p-[2rem] md:p-[2rem]">
         {["One Way", "Round Trip", "Multi City"].map((type) => (
           <span className="flex items-center justify-center py-[.8rem] md:py-[0]" key={type}>
             <input
@@ -175,26 +175,29 @@ const BoardCard = () => {
 
       <div className="flex flex-wrap mx-[2rem] rounded-3xl">
   <div className="flex flex-col gap-[24px] w-full lg:w-[25%] border rounded-xl lg:rounded-l-3xl lg:rounded-r-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
-    <span className="text-sm">From</span>
-    <select
-      value={selectedFromCity}
-      onChange={handleFromCityChange}
-      className="font-black font-meutas text-regular text-[1.1rem] md:text-[1.5rem] lg:text-[1.5rem] appearance-none focus:outline-none focus:ring-0"
-      style={{
-        outline: "none",
-        border: "none",
-        boxShadow: "none",
-      }}
-    >
-      <option className="font-black" value="" disabled>
-        Select a city
-      </option>
-      {cities.map((city, index) => (
-        <option key={index} value={city}>
-          {city}
-        </option>
-      ))}
-    </select>
+  <span className="text-sm">From</span>
+<select
+  value={selectedFromCity}
+  onChange={handleFromCityChange}
+  className="font-black font-meutas text-regular text-[1.1rem] md:text-[1.3rem] lg:text-[1.4rem] appearance-none focus:outline-none focus:ring-0 w-full h-auto py-2 leading-[1.5rem] overflow-visible"
+  style={{
+    outline: "none",
+    border: "none",
+    boxShadow: "none",
+    WebkitAppearance: "none",
+    MozAppearance: "none",
+  }}
+>
+  <option className="font-black" value="" disabled>
+    Select a city
+  </option>
+  {cities.map((city, index) => (
+    <option key={index} value={city}>
+      {city}
+    </option>
+  ))}
+</select>
+
   </div>
 
   <div className="flex flex-col gap-[24px] text-regular w-full lg:w-[25%] border rounded-xl lg:rounded-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
@@ -202,7 +205,7 @@ const BoardCard = () => {
     <select
       value={selectedToCity}
       onChange={handleToCityChange}
-      className="font-black font-meutas text-regulars text-[1.1rem] md:text-[1.5rem] lg:text-[1.5rem] appearance-none focus:outline-none focus:ring-0"
+      className="font-black font-meutas text-regulars text-[1.1rem] md:text-[1.3rem] lg:text-[1.4rem] w-full h-auto py-2 leading-[1.5rem] overflow-visible appearance-none focus:outline-none focus:ring-0"
       style={{
         outline: "none",
         border: "none",
@@ -220,9 +223,9 @@ const BoardCard = () => {
     </select>
   </div>
 
-  <div className="flex flex-col w-full lg:w-[25%] border text-regular rounded-xl lg:rounded-none">
+  <div className="flex flex-col w-full lg:w-[30%] border text-regular rounded-xl lg:rounded-none">
     <div className="flex">
-      <div className="flex flex-col w-full md:w-[50%] gap-[25px] text-sm mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
+      <div className="flex flex-col w-full md:w-[50%] gap-[19px] text-sm mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
       <span className="flex items-center">
           Date
           <img src={Calendar} alt="travels calendar" className="md:mb-1 ml-1" />
@@ -233,7 +236,7 @@ const BoardCard = () => {
           selected={startDate}
           onChange={(date) => setStartDate(date)}
           placeholderText="Date"
-          className="font-black font-meutas text-[1.1rem] md:text-[1.5rem] lg:text-[1.5rem] w-full placeholder:text-regular"
+          className="font-black font-meutas text-[1.1rem] md:text-[1.3rem] lg:text-[1.4rem] h-auto py-2 leading-[1.5rem] overflow-visible w-full placeholder:text-regular"
           dateFormat="d MMM ''yy" 
           style={{
             outline: "none",
@@ -251,17 +254,17 @@ const BoardCard = () => {
 
 
 {tripType === "Round Trip" && (
-    <div className="flex flex-col gap-[24px] w-full md:w-[50%] font-meutas text-regular border-l-[2px] lg:rounded-none lg:mb-0 p-2 md:p-3 lg:p-6">
+    <div className="flex flex-col gap-[19px] w-full md:w-[50%] font-meutas text-regular border-l-[2px] lg:rounded-none lg:mb-0 p-2 md:p-3 lg:p-6">
       <span className="flex items-center text-sm">
         Depature
-        <img src={Calendar} alt="return calendar" className=" ml-1" />
+        <img src={Calendar} alt="return calendar" className="md:mb-1 ml-1" />
       </span>
        {/* DatePicker */}
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date)}
           placeholderText="Date"
-          className="font-black font-meutas text-[1.1rem] md:text-[1.5rem] lg:text-[1.5rem] w-full placeholder:text-regular"
+          className="font-black font-meutas text-[1.1rem] md:text-[1.3rem] lg:text-[1.4rem] h-auto py-2 leading-[1.5rem] overflow-visible w-full placeholder:text-regular"
           dateFormat="d MMM ''yy" 
           style={{
             outline: "none",
@@ -283,13 +286,13 @@ const BoardCard = () => {
    
 
  
- <div className="flex flex-col gap-[24px] w-full lg:w-[25%] border rounded-xl mt-3 md:mt-0 lg:rounded-r-3xl lg:rounded-l-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
+ <div className="flex flex-col gap-[24px] w-full lg:w-[20%] border rounded-xl mt-3 md:mt-0 lg:rounded-r-3xl lg:rounded-l-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
 
       <span className="text-sm">Passengers</span>
       
       {/* Custom Dropdown Button */}
       <div
-        className="cursor-pointer font-black text-regular text-[1.1rem] md:text-[1.5rem] lg:text-[1.5rem] w-[200px] flex items-center justify-between"
+        className="cursor-pointer font-black text-regular text-[1.1rem] md:text-[1.3rem] lg:text-[1.4rem] w-[200px] h-auto py-2 leading-[1.5rem] overflow-visible  flex items-center justify-between"
         onClick={toggleDropdownPassenger}
       >
         <span className="font-meutas">{selectedValue}{selectedValue > 1 ? "" : ""}</span>
@@ -397,7 +400,7 @@ const BoardCard = () => {
       <select
         value=""
         onChange={(e) => console.log(`From city selected for card ${index}:`, e.target.value)}
-        className="font-black text-[#393939] text-[1.1rem] md:text-[1.5rem] lg:text-[1.5rem] appearance-none focus:outline-none focus:ring-0"
+        className="font-black text-[1.1rem] md:text-[1.3rem] lg:text-[1.4rem] h-auto py-2 leading-[1.5rem] overflow-visible w-full placeholder:text-regular appearance-none focus:outline-none focus:ring-0"
         style={{
           outline: "none",
           border: "none",
@@ -420,7 +423,7 @@ const BoardCard = () => {
       <select
         value=""
         onChange={(e) => console.log(`To city selected for card ${index}:`, e.target.value)}
-        className="font-black text-[#393939] text-[1.1rem] md:text-[1.5rem] lg:text-[1.5rem] appearance-none focus:outline-none focus:ring-0"
+        className="font-black text-[1.1rem] md:text-[1.3rem] lg:text-[1.4rem] h-auto py-2 leading-[1.5rem] overflow-visible w-full placeholder:text-regular appearance-none focus:outline-none focus:ring-0"
         style={{
           outline: "none",
           border: "none",
@@ -438,33 +441,41 @@ const BoardCard = () => {
       </select>
     </div>
 
-    <div className="flex flex-col gap-[24px] w-full lg:w-[25%] border rounded-xl lg:rounded-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
-      <span className="flex items-center text-sm">
-        Date
-        <img src={Calendar} alt="travels calendar" className="mb-1 ml-1" />
-      </span>
-      <DatePicker
-        selected={null}
-        onChange={(date) => console.log(`Date selected for card ${index}:`, date)}
-        dateFormat="MMMM d, yyyy"
-        placeholderText="Select a date"
-        className="font-black text-[1.1rem]  md:text-[1.5rem] lg:text-[1.5rem] w-[100%] placeholder:text-[#393939]"
-        style={{
-          outline: "none",
-          border: "none",
-          boxShadow: "none",
-        }}
-      />
+    <div className="flex flex-col gap-[18px] w-full lg:w-[30%] border rounded-xl lg:rounded-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
+    <span className="flex items-center">
+          Date
+          <img src={Calendar} alt="travels calendar" className="md:mb-1 ml-1" />
+        </span>
+        
+        {/* DatePicker */}
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date)}
+          placeholderText="Date"
+          className="font-black font-meutas text-[1.1rem] md:text-[1.3rem] lg:text-[1.4rem] h-auto py-2 leading-[1.5rem] overflow-visible w-full placeholder:text-regular"
+          dateFormat="d MMM ''yy" 
+          style={{
+            outline: "none",
+            border: "none",
+            boxShadow: "none",
+          }}
+          minDate={new Date()}
+        />
+
+        {/* Customized Date Output */}
+        <div className="flex flex-col gap-[1px]">
+          <span className="text-sm font-light">{formattedDate.day}</span>
+        </div>
     </div>
 
 
-    <div className="flex flex-col  gap-[24px] w-full lg:w-[25%] border rounded-xl lg:rounded-r-3xl lg:rounded-l-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
+    <div className="flex flex-col gap-[24px] w-full lg:w-[20%] border rounded-xl lg:rounded-r-3xl lg:rounded-l-none mb-3 lg:mb-0 p-2 md:p-3 lg:p-6">
 
       <span className="text-sm">Passengers</span>
       
       {/* Custom Dropdown Button */}
       <div
-        className="cursor-pointer font-black text-regular text-[1.1rem] md:text-[1.5rem] lg:text-[1.5rem] w-[200px] flex items-center justify-between"
+        className="cursor-pointer font-black text-regular text-[1.1rem] md:text-[1.3rem] lg:text-[1.4rem] w-[200px] flex items-center justify-between"
         onClick={toggleDropdownPassenger}
       >
         <span>{selectedValue} {selectedValue > 1 ? "" : ""}</span>
@@ -563,7 +574,7 @@ const BoardCard = () => {
 ))}
 
 
-      <div className="flex items-center px-[3rem] pt-[2rem] pb-[5rem] lg:py-[3rem]">
+      <div className="flex items-center px-[3rem] pt-[1rem] md:pt-[2rem] pb-[5rem] lg:py-[3rem]">
         <label className="flex items-center gap-2 custom-checkbox">
           <input type="checkbox" className="hidden" />
           <span className="checkmark"></span>
@@ -571,7 +582,7 @@ const BoardCard = () => {
         </label>
       </div>
 
-      <button className="bg-primary rounded-full bottom-[-32px] hover:text-white text-white py-[1rem] px-[2rem] md:py-[1.5rem] md:px-[4rem] left-1/2 transform -translate-x-1/2 hover:bg-opacity-80 md:text-[1.3rem] lg:text-[1.8rem] font-bold absolute transition duration-300">
+      <button className="bg-primary rounded-full bottom-[15px] md:bottom-[-29px] hover:text-white text-white py-[1rem] px-[2rem] lg:py-[1.3rem] lg:px-[3rem] left-1/2 transform -translate-x-1/2 hover:bg-opacity-80 md:text-[1.2rem] lg:text-[1.5rem] font-bold absolute transition duration-300">
         Search Flight
       </button>
     </motion.div>

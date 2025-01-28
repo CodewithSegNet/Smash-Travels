@@ -94,6 +94,36 @@ function Responsive() {
       price: "₦630,000",
       slach: "₦700,000",
     },
+    {
+      image1: image,
+      image2: partner7,
+      title: "Round Trip",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
+      fare: "Flight Fare",
+      price: "₦630,000",
+      slach: "₦700,000",
+    },
+    {
+      image1: image,
+      image2: partner,
+      title: "Round Trip",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
+      fare: "Flight Fare",
+      price: "₦630,000",
+      slach: "₦700,000",
+    },
+    {
+      image1: image,
+      image2: partner2,
+      title: "Round Trip",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
+      fare: "Flight Fare",
+      price: "₦630,000",
+      slach: "₦700,000",
+    },
   ];
 
   const slides2 = [
@@ -120,6 +150,36 @@ function Responsive() {
     {
       image1: image,
       image2: partner2,
+      title: "Round Trip",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
+      fare: "Flight Fare",
+      price: "₦630,000",
+      slach: "₦700,000",
+    },
+    {
+      image1: image,
+      image2: image1,
+      title: "Round Trip",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
+      fare: "Flight Fare",
+      price: "₦630,000",
+      slach: "₦700,000",
+    },
+    {
+      image1: img1,
+      image2: logo1,
+      title: "Round Trip",
+      firstlocation: "Abuja",
+      secondlocation: "Lagos",
+      fare: "Flight Fare",
+      price: "₦630,000",
+      slach: "₦700,000",
+    },
+    {
+      image1: img1,
+      image2: logo2,
       title: "Round Trip",
       firstlocation: "Abuja",
       secondlocation: "Lagos",
@@ -195,7 +255,7 @@ function Responsive() {
   };
 
   return (
-    <div className="font-meutasRegular slider-container p-10 bg-gray-100 mb-[4rem] md:mb-[6rem] mt-[5rem]">
+    <div className="font-meutasRegular slider-container p-10 bg-gray-100 mb-[4rem] md:mb-[5rem] mt-[4rem]">
       <h1 className="font-meutasRegular text-regular text-2xl md:text-3xl font-bold">Best-Selling Flight Offers</h1>
       <Slider {...settings}>
         {slides1.map((slide, index) => (
@@ -215,6 +275,7 @@ function Responsive() {
       </Slider>
 
       {/* Second Slider */}
+      <div className="hidden md:block">
       <Slider {...settings2}>
         {slides2.map((slide, index) => (
           <div key={index} className="px-3">
@@ -231,6 +292,7 @@ function Responsive() {
           </div>
         ))}
       </Slider>
+      </div>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import { fadeIn } from '../variants'
 
 const Hero = () => {
   return (
-    <div className="flex md:px-14 p-4 mt-[2rem] md:mt-[3rem] xl:mt-[9rem] max-w-screen-2xl mx-auto max-h-[560px] grow relative items-end items-none md:items-center">
+    <div className="flex md:px-14 p-4 mt-[2rem] md:mt-[3rem] xl:mt-[5rem] max-w-screen-2xl mx-auto max-h-[560px] grow relative items-end items-none md:items-center">
       <div className="flex md:flex-row flex-col w-full">
         <div
           className="w-[100%] flex flex-col md:mt-0 lg:mt-0 mt-3"

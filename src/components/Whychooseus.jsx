@@ -42,7 +42,7 @@ const read = [
 
 const Whychooseus = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto my-[3rem] md:my-[6rem]">
+    <div className="max-w-screen-2xl mx-auto my-[3rem] md:my-[4rem]">
       <div>
         <h2 className="text-center font-meutasRegular text-2xl lg:text-4xl text-regular font-bold mb-4 md:mb-8">Why Choose Us</h2>
       </div>

@@ -67,7 +67,7 @@ const HomePage = () => {
           srcSet={`${backgroundImageSmall} 720w, ${backgroundImageMedium} 1440w, ${backgroundImage} 2880w`}
           sizes="(min-width: 2880px) 2880px, 100vw"
           alt="Explore travel packages and visa services with Smash Travels"
-          className="absolute object-cover w-full h-[450px] md:h-[580px] lg:h-[550px] object-fit inset-0"
+          className="absolute object-cover w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px] object-fit inset-0"
           loading="eager"
         />
         <Navbar />

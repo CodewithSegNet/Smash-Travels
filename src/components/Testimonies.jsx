@@ -103,8 +103,8 @@ function Testimonies() {
   };
 
   return (
-    <div className="md:my-16">
-      <h1 className="text-center text-regular text-2xl font-meutasRegular lg:text-5xl font-bold mb-[4rem]">Testimonials</h1>
+    <div className="md:my-[4rem]">
+      <h1 className="text-center text-regular text-2xl font-meutasRegular lg:text-4xl font-bold mb-[4rem]">Testimonials</h1>
       <Slider {...settings} className=" px-4">
       {testimonyprofile.map((item, index) => (
           <div key={index} className="space-x-4">

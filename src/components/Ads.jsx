@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 
 const Book = () => {
   return (
-    <div className="w-full max-w-screen-2xl mx-auto flex justify-center px-7 md:px-7 lg:px-4 py-[5rem] md:py-[6rem] md:mt-[8rem]">
+    <div className="w-full max-w-screen-2xl mx-auto flex justify-center px-7 md:px-7 lg:px-4 pt-[5rem] pb-[4rem] md:pt-[6rem] md:pb-[5rem]">
       <motion.div 
        variants={fadeIn("up", 0.2)}
         initial="hidden"
@@ -21,12 +21,12 @@ const Book = () => {
           className="col-span-2 row-span-2 bg-cover bg-center h-[388px] md:h-[800px] rounded-3xl p-6 flex flex-col justify-center text-white"
           style={{ backgroundImage: `url(${book})` }}
         >
-          <h3 className="font-meutasBold text-4xl md:text-6xl md:p-6 lg:text-8xl leading-normal md:!leading-extra-loose">
+          <h3 className="font-meutasBold text-4xl md:text-6xl md:p-6 lg:text-7xl leading-normal md:!leading-extra-loose">
             Book your Flights Today With <span className="text-primary">Smash Travels</span> 
           </h3>
 
           <div className="mx-auto mt-[1rem]">
-          <button className="lg:mt-1 py-[.7rem] px-[2rem] md:py-[1.5rem] md:px-[4rem] bg-primary md:text-[1.3rem] lg:text-[1.8rem] hover:bg-opacity-80 border-[5px] border-primary hover:border-[5px] hover:border-white transition-all duration-300 font-bold rounded-full ">
+          <button className="lg:mt-1 py-[.7rem] px-[2rem] md:py-[1.3rem] md:px-[4rem] bg-primary md:text-[1.3rem] lg:text-[1.6rem] hover:bg-opacity-80 border-[5px] border-primary hover:border-[5px] hover:border-white transition-all duration-300 font-bold rounded-full ">
             Book A Flight Now
           </button>
           </div>
