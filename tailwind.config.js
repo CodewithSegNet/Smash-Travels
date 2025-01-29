@@ -12,6 +12,8 @@ export default {
         "tertiary": "#4260C1",
         "regular": "#393939",
         regular2: 'rgba(66, 96, 193, 0.2)',
+        regular3: 'rgba(253, 150, 2, 0.2)'
+
 
       },
       boxShadow: {

@@ -59,7 +59,7 @@ const PassportPage = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <div className="relative w-full  md:max-h-[806px]">
+      <div className="relative w-full md:max-h-[806px]">
         <img
           src={backgroundImage}
           srcSet={`${backgroundImageSmall} 720w, ${backgroundImageMedium} 1440w, ${backgroundImage} 2880w`}
@@ -68,13 +68,13 @@ const PassportPage = () => {
           className="absolute object-cover w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px] object-fit inset-0"
           loading="eager"
         />
+          <div className="absolute inset-0 bg-black bg-opacity-30 h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px]"></div>
+
         <Navbar />
         <Hero />
         </div>
 
-        <div className="relative min-h-[100vh]">
         <Cards />
-        </div>
 
         <Faq />
         <Footer />
