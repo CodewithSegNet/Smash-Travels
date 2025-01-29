@@ -31,7 +31,7 @@ const Navbar = () => {
       submenu: [
         { link: "Flight", path: "/flight", ariaLabel: "Book affordable flights for your next adventure" },
         { link: "Work Visa", path: "/work", ariaLabel: "Hassle-free work visa application services" },
-        { link: "Passport", path: "/passport", ariaLabel: "Quick and easy passport processing" },
+        { link: "Passport", path: "/passport-services", ariaLabel: "Quick and easy passport processing" },
         { link: "Airport Pickup", path: "/Airport-pickup", ariaLabel: "Quick and easy passport processing" },
         { link: "Car Rental", path: "/Car-rental", ariaLabel: "Quick and easy passport processing" },
 
@@ -178,7 +178,7 @@ const Navbar = () => {
                           </NavLink>
                         </li>
                         <li className="px-4 py-2 hover:bg-gray-100">
-                        <NavLink to="/service2" className="text-black">
+                        <NavLink to="/passport-services" className="text-black">
                           <div className='flex items-center'>
                             <div className='w-10 h-6 pr-3'>
                               <img className='text-primary' src={passport} alt="" />

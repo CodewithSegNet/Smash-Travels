@@ -9,8 +9,10 @@ export default {
       colors: {
         "primary": "#FD9602",
         "secondary": "#FD9602",
-        "tertiary": "#151513",
-        "regular": "#393939"
+        "tertiary": "#4260C1",
+        "regular": "#393939",
+        regular2: 'rgba(66, 96, 193, 0.2)',
+
       },
       boxShadow: {
         'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',

@@ -17,14 +17,6 @@ import Faq from "../../components/Faq"
 
 
 const HomePage = () => {
-  const HeroImg = {
-    backgroundImage: `linear-gradient(url(${backgroundImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    height: "1000px",
-    width: "100%",
-  };
 
   return (
     <HelmetProvider>

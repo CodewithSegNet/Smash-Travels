@@ -1,4 +1,4 @@
-import Card from "../components/Card2";
+import Card from "../components/PassportCards";
 import React, { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 

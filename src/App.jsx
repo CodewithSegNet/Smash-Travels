@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/homePage';
+import PassportPage from './pages/passportpage';
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/passport-services" element={<PassportPage />} />
         </Routes>
       </BrowserRouter>
     </div>

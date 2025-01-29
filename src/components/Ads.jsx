@@ -12,8 +12,8 @@ const Book = () => {
     lazyLoad: true,
     autoplay: true,
     arrows: false,
-    speed: 2000,
-    autoplaySpeed: 5000,
+    speed: 1500,
+    autoplaySpeed: 4000,
     cssEase: "linear",
     infinite: true,
     slidesToShow: 1,
@@ -31,7 +31,6 @@ const Book = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    rtl: true,
   };
 
   return (
@@ -64,12 +63,12 @@ const Book = () => {
     {[flight, book, phone].map((image, idx) => (
       <div
         key={idx}
-        className="h-[388px] flex justify-center items-center rounded-[20px] overflow-hidden relative"
+        className="h-[388px] flex justify-center items-center px-[7px] overflow-hidden relative"
       >
         <img
           src={image}
           alt={`Slide ${idx + 1}`}
-          className="w-full h-full object-cover"
+          className="w-full h-full rounded-[20px] object-cover"
         />
         {/* Button Container */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
@@ -89,12 +88,12 @@ const Book = () => {
             {[phone, flight, book].map((image, idx) => (
               <div
                 key={idx}
-                className="h-[388px] flex justify-center items-center rounded-[20px] overflow-hidden"
+                className="h-[388px] flex justify-center px-[7px] items-center overflow-hidden"
               >
                 <img
                   src={image}
                   alt={`Slide ${idx + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full rounded-[20px] object-cover"
                 />
               </div>
             ))}

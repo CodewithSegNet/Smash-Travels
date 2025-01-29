@@ -89,7 +89,7 @@ const Footer = () => {
                   to="/fleets"
                   className="block hover:text-secondary text-gray-200"
                 >
-                  02013309103
+                  02013309103 <span className="text-secondary">(HotLine)</span>
                 </Link>
                 {/* <Link
                   to="/franchise"
