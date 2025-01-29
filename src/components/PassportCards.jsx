@@ -26,9 +26,9 @@ const SlideCard = ({ image1, title, firstlocation, price, pages, type }) => {
       {/* Content Section */}
       <div className="flex flex-col gap-3 md:w-[65%]">
         <div className="flex items-center justify-between">
-          <h3 className="text-md font-semibold font-meutasRegular">{title}</h3>
+          <h3 className="text-sm md:text-md font-semibold font-meutasRegular">{title}</h3>
           <p
-            className={`rounded-full text-[10px] w-[24%] font-medium text-center flex items-center justify-center h-[30px] ${
+            className={`rounded-full text-[10px] w-[30%] md:w-[24%] font-medium text-center flex items-center justify-center h-[30px] ${
               type === "Express" ? "bg-regular2 text-tertiary" : "bg-regular3 text-primary"
             }`}
           >
@@ -38,7 +38,7 @@ const SlideCard = ({ image1, title, firstlocation, price, pages, type }) => {
 
         <div className="flex items-center text-regular">
           <span className="text-sm">Processing Time:</span>
-          <p className="text-regular font-bold pl-2 text-md md:text-lg">
+          <p className="text-regular font-bold pl-2 text-sm md:text-md ">
             {firstlocation}
           </p>
         </div>
@@ -46,11 +46,11 @@ const SlideCard = ({ image1, title, firstlocation, price, pages, type }) => {
         <div className="flex flex-col gap-3 w-[180px]">
           <div className="flex items-center text-regular">
             <span className="text-sm">Pages:</span>
-            <p className="text-sm pl-2 font-bold">{pages}</p>
+            <p className="text-sm md:text-md pl-2 font-bold">{pages}</p>
           </div>
           <div className="flex items-center text-regular">
             <span className="text-sm">Price:</span>
-            <p className="font-bold pl-2 md:text-lg">{price}</p>
+            <p className="font-bold pl-2 text-sm md:text-md">{price}</p>
           </div>
         </div>
 
@@ -177,12 +177,12 @@ function Responsive() {
 
   return (
     <div className="h-full relative mb-[4rem] md:mb-[5rem] mt-[7rem]">
-      <div className="text-center text-regular text-2xl lg:text-4xl mb-[2rem]">
+      <div className="text-center text-regular text-[18px] lg:text-4xl mb-[2rem]">
         <h1 className="font-meutasRegular font-semibold">Select Your Desired Package</h1>
       </div>
 
       {/* Radio Buttons */}
-      <div className="flex justify-center font-meutasRegular font-medium text-regular gap-6">
+      <div className="flex justify-center text-sm md:text-md font-meutasRegular font-medium text-regular gap-6">
         {["New Passport", "Passport Renewal"].map((type) => (
           <label key={type} className="flex items-center gap-2 font-meutasRegular text-regular cursor-pointer">
             <input
