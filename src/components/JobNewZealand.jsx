@@ -100,32 +100,6 @@ const JobNewZealand = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
-        {/* {read.map((item, index) => (
-          <div key={index} className="p-6">
-            <img
-              src={item.img}
-              alt={item.title}
-              className="w-full h-52 object-contain rounded-t-[10px]"
-            />
-            <div className="pt-2 px-2">
-              <h3 className="font-semibold font-meutasBold text-regular md:text-xl">
-                {item.title}
-              </h3>
-              <p className="pt-2 leading-[1.5] font-meutasLight text-sm md:text-md text-regular">
-                {expandedIndexes.includes(index)
-                  ? item.fulldescription
-                  : item.description}
-
-                <span
-                  onClick={() => toggleText(index)}
-                  className="pl-1 leading-[1.5] font-meutasLight text-sm md:text-md text-secondary cursor-pointer"
-                >
-                  {expandedIndexes.includes(index) ? "Read less" : "Read More"}
-                </span>
-              </p>
-            </div>
-          </div>
-        ))} */}
         {read.map((item, index) => {
           return (
             <div className="flex justify-center items-center">
@@ -135,6 +109,7 @@ const JobNewZealand = () => {
                 buttonText="Apply Now"
                 description={item.description}
                 title={item.title}
+                fullDescription={item.fulldescription}
               />
             </div>
           );

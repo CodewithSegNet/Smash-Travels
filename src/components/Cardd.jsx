@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import img from "../assets/image_fx_21.png";
 
-const Cardd = ({ buttonText, title, description, image }) => {
+const Cardd = ({ buttonText, title, description, image, fullDescription }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
-    <div className="flex flex-col w-[387px] ">
+    <div className="flex flex-col w-[387px]">
       <img src={image} className="h-52 w-[387px] rounded-t-[10px] mb-2" />
       <div className="pt-2 px-2 mb-3">
         <h3 className="font-semibold font-meutasBold text-regular md:text-xl">
           {title}
         </h3>
         <p className="pt-2 leading-[1.5] font-meutasLight text-sm md:text-md text-regular">
-          {description}
-          <span className="pl-1 leading-[1.5] font-meutasLight text-sm md:text-md text-secondary cursor-pointer">
-            Read More
+          {isExpanded ? fullDescription : description}
+          <span
+            className="pl-1 leading-[1.5] font-meutasLight text-sm md:text-md text-secondary cursor-pointer"
+            onClick={() => setIsExpanded(!isExpanded)}
+          >
+            {isExpanded ? " Read Less" : " Read More"}
           </span>
         </p>
       </div>
