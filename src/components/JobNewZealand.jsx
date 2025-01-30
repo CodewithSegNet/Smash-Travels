@@ -89,13 +89,13 @@ const JobNewZealand = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-      className="max-w-screen-2xl mx-auto lg:mt-[200px] md:my-[4rem]"
+      className=""
     >
-      <div className="flex flex-col justify-center items-center mb-[24px] ">
-        <p className="text-4xl font-meutasRegular font-bold mb-3">
+      <div className="flex flex-col justify-center items-center mb-[60px]">
+        <p className="text-4xl font-meutasRegular font-bold mb-[20px]">
           Jobs Available
         </p>
-        <p className="text-xl font-meutasRegular font-light text-regular">
+        <p className="text-xl font-light text-newgray font-meutasRegular ">
           Below Are The Jobs Available In New Zealand
         </p>
       </div>
