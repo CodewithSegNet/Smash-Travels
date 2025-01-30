@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import bartender from "../assets/bartender.png";
 import warehouse from "../assets/warehouse.png";
+import carpenter from "../assets/carpenter.png";
+import mechanic from "../assets/mechanic.png";
+import engineering from "../assets/engineering.png";
+import roomAttenders from "../assets/roomAttenders.png";
+import customerRep from "../assets/customerRep.png";
+
 import img2 from "../assets/image_fx_27.png";
 import img3 from "../assets/image_fx_29.png";
 import img4 from "../assets/image_fx_30.png";
@@ -22,7 +28,7 @@ const read = [
     sector: "Hospitality Sector",
   },
   {
-    img: img2,
+    img: warehouse,
     title: "Warehouse Workers",
     description:
       "In the logistics sector in Canada, you'll oversee the efficient transportation, storage, and distribution of goods...",
@@ -31,7 +37,7 @@ const read = [
     sector: "Logistics Sector",
   },
   {
-    img: img4,
+    img: carpenter,
     title: "Carpenters",
     description:
       "Working in Canada's construction sector involves building, repairing, and maintaining infrastructure. Responsibilities may include...",
@@ -40,7 +46,7 @@ const read = [
     sector: "Construction Sector",
   },
   {
-    img: img5,
+    img: mechanic,
     title: "Mechanics",
     description:
       "The technical sector in Canada offers roles requiring specialized skills in fields such as IT, mechanics, or electronics...",
@@ -49,7 +55,7 @@ const read = [
     sector: "Technical Sector",
   },
   {
-    img: img3,
+    img: engineering,
     title: "Electrical Engineers",
     description:
       "In the engineering sector in Canada, you'll contribute to designing, developing, and implementing innovative solutions...",
@@ -58,7 +64,7 @@ const read = [
     sector: "Engineering Sector",
   },
   {
-    img: img2,
+    img: roomAttenders,
     title: "Room Attenders",
     description:
       "Housekeeping roles in Canada focus on maintaining clean, organized, and hygienic spaces in residential, commercial, or...",
@@ -67,7 +73,7 @@ const read = [
     sector: "Housekeeping Sector",
   },
   {
-    img: img2,
+    img: customerRep,
     title: "Customer Service Representatives",
     description:
       "As an NDT Officer in Canada, your primary responsibilities will involve providing excellent customer service in the field of...",
