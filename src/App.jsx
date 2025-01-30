@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import PassportPage from "./pages/passportpage";
 import JobNewZealand from "./pages/newZealand";
+import JobNetherlands from "./components/JobNetherlands";
+import NewZealand from "./pages/newZealand";
+import Netherlands from "./pages/netherlands";
 
 function App() {
   return (
@@ -15,7 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/passport-services" element={<PassportPage />} />
-          <Route path="/job-new-zealand" element={<JobNewZealand />} />
+          <Route path="/job-new-zealand" element={<NewZealand />} />
+          <Route path="/job-netherlands" element={<Netherlands />} />
         </Routes>
       </BrowserRouter>
     </div>
