@@ -8,16 +8,14 @@ import Navbar from "../../components/Navbar";
 import Card from "../../components/BoardCard";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Ads from "../../components/Ads";
-import Bookings from "../../components/BookingsPartner"
+import Bookings from "../../components/BookingsPartner";
 import Cards from "../../components/Card";
 import Whychooseus from "../../components/Whychooseus";
 import Footer from "../../components/Footer";
-import Testimonies from "../../components/Testimonies"
-import Faq from "../../components/Faq"
-
+import Testimonies from "../../components/Testimonies";
+import Faq from "../../components/Faq";
 
 const HomePage = () => {
-
   return (
     <HelmetProvider>
       <Helmet>
@@ -52,8 +50,8 @@ const HomePage = () => {
         <link rel="canonical" href="https://www.smashtravels.com" />
       </Helmet>
 
-         {/* Hero Section */}
-         <div className="relative w-full  md:max-h-[806px]">
+      {/* Hero Section */}
+      <div className="relative w-full  md:max-h-[806px]">
         <img
           src={backgroundImage}
           srcSet={`${backgroundImageSmall} 720w, ${backgroundImageMedium} 1440w, ${backgroundImage} 2880w`}
