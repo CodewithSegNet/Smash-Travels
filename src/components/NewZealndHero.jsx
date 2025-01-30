@@ -15,7 +15,7 @@ const NewZealandHero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="xl:text-7xl font-meutasBold md:text-4xl lg:text-6xl text-3xl text-white leading-[1.2]"
+              className="xl:text-7xl font-meutasBold md:text-4xl sm:3xl lg:text-6xl text-3xl text-white leading-[1.2]"
             >
               Relocate To New Zealand
             </motion.h1>
