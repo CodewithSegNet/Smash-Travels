@@ -1,12 +1,25 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Cardd = ({ buttonText, title, description, image, fullDescription }) => {
+const Cardd = ({
+  buttonText,
+  title,
+  description,
+  image,
+  fullDescription,
+  sector,
+}) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="flex flex-col w-[387px]">
-      <img src={image} className="h-52 w-[387px] rounded-t-[10px] mb-2" />
+    <div className="flex flex-col  w-[387px]">
+      <div className="relative">
+        <span className="flex justify-center items-center text-[16px] font-meutasRegular bg-black bg-opacity-50 py-2 px-3 absolute top-4 left-4 rounded-full z-20 text-white">
+          {sector}
+        </span>
+        <img src={image} className="h-52 w-[387px] rounded-t-[10px] mb-2" />
+      </div>
+
       <div className="pt-2 px-2 mb-3">
         <h3 className="font-semibold font-meutasBold text-regular md:text-xl">
           {title}
