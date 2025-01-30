@@ -177,7 +177,7 @@ function Responsive() {
 
   return (
     <div className="h-full relative mb-[4rem] md:mb-[5rem] mt-[7rem]">
-      <div className="text-center text-regular text-[18px] lg:text-4xl mb-[2rem]">
+      <div className="text-center text-gray text-[18px] lg:text-4xl mb-[2rem]">
         <h1 className="font-meutasRegular font-semibold">Select Your Desired Package</h1>
       </div>
 
