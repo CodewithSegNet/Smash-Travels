@@ -10,6 +10,13 @@ import WorkVisaCard from "../../components/workvisacard";
 import Footer from "../../components/Footer";
 import Testimonies from "../../components/Testimonies";
 import Faq from "../../components/Faq";
+import Countries from "../../components/countries"
+import SuccessRate from "../../components/success";
+import CountryBoard from "../../components/CountryBoard";
+import WorkVisaWhyChooseUs from "../../components/WorkVisaChoose";
+
+
+
 
 const HomePage = () => {
   return (
@@ -62,6 +69,10 @@ const HomePage = () => {
         </div>
 
         <WorkVisaCard />
+        <Countries />
+        <SuccessRate />
+        <CountryBoard/>
+        <WorkVisaWhyChooseUs/>
         <Testimonies />
         <Faq />
         <Footer />

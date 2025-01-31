@@ -60,14 +60,14 @@ const PassportHero = () => {
                   viewport={{ once: true }}
                   className="flex items-center flex-row gap-3 mt-1">
                     <Link to="/"
-                      className="flex items-center border-[3px] md:border-[3px] lg:border-[3px] justify-center text-md bg-opacity-100 hover:bg-opacity-50 border-white bg-secondary transition-all duration-300 py-2 px-4 md:py-2 md:px-6 lg:py-3 lg:px-6 text-white rounded-full hover:text-white text-sm md:text-lg font-semibold"
+                      className="flex items-center border-[3px] md:border-[3px] lg:border-[3px] bg-transparent justify-center text-md bg-opacity-100 hover:bg-opacity-50 border-white transition-all duration-300 py-2 px-4 md:py-2 md:px-6 lg:py-3 lg:px-6 text-white rounded-full  hover:bg-primary hover:text-white text-sm md:text-lg font-semibold"
                     >
                       <img src={airplane} className='pr-2' alt="airplane icon image"/> 
                       Flight
                     </Link>
                     <Link
                       to="/"
-                      className="flex items-center border-[1px] md:border-[1px] border-white bg-opacity-100 hover:bg-opacity-50 justify-center bg-transparent transition-all duration-300 text-white py-2 px-5 md:py-2 md:px-6 lg:px-6 lg:py-3 rounded-full hover:text-white hover:bg-primary font-semibold text-sm md:text-lg"
+                      className="flex items-center border-[1px] md:border-[1px] border-white bg-opacity-100 hover:bg-opacity-50 justify-center  bg-secondary  transition-all duration-300 text-white py-2 px-5 md:py-2 md:px-6 lg:px-6 lg:py-3 rounded-full  hover:bg-primary hover:text-white font-semibold text-sm md:text-lg"
                     >
                       <img src={stamp} className='pr-2' alt="visa stamp icon image" />
                       Work Visas
