@@ -102,7 +102,7 @@ const JobNewZealand = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-      className="mb-[100px]"
+      className="mb-[100px] max-w-[1289px] mx-auto"
     >
       <div className="flex flex-col justify-center items-center mb-[60px]">
         <p className="text-4xl font-meutasRegular font-bold mb-[20px]">
