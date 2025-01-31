@@ -83,7 +83,7 @@ const read = [
   },
 ];
 
-const JobDenmark = () => {
+const JobCroatia = () => {
   const [expandedIndexes, setExpandedIndexes] = useState([]);
 
   const toggleText = (index) => {
@@ -109,7 +109,7 @@ const JobDenmark = () => {
           Jobs Available
         </p>
         <p className="text-xl font-light text-newgray font-meutasRegular ">
-          Below Are The Jobs Available In Denmark
+          Below Are The Jobs Available In Croatia
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
@@ -133,4 +133,4 @@ const JobDenmark = () => {
   );
 };
 
-export default JobDenmark;
+export default JobCroatia;

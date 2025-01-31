@@ -83,7 +83,7 @@ const read = [
   },
 ];
 
-const JobDenmark = () => {
+const JobLuxembourg = () => {
   const [expandedIndexes, setExpandedIndexes] = useState([]);
 
   const toggleText = (index) => {
@@ -102,14 +102,14 @@ const JobDenmark = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-      className="mb-[100px] lg:mx-[80px] sm:mx-[20px] "
+      className="mb-[100px] mx-[100px]"
     >
       <div className="flex flex-col justify-center items-center mb-[60px]">
         <p className="text-4xl font-meutasRegular font-bold mb-[20px]">
           Jobs Available
         </p>
         <p className="text-xl font-light text-newgray font-meutasRegular ">
-          Below Are The Jobs Available In Denmark
+          Below Are The Jobs Available In Luxembourg
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
@@ -133,4 +133,4 @@ const JobDenmark = () => {
   );
 };
 
-export default JobDenmark;
+export default JobLuxembourg;

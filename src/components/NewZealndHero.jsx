@@ -36,7 +36,7 @@ const NewZealandHero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="xl:text-7xl font-meutasBold md:text-4xl lg:text-6xl text-3xl text-white"
+              className="xl:text-7xl font-meutasLight md:text-4xl lg:text-6xl text-3xl text-white"
             >
               Relocate to New Zealand Today With SmashTravels
             </motion.h1>
@@ -46,7 +46,7 @@ const NewZealandHero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
-            className="text-4xl text-gray-100 pt-4 pb-6 md:pt-6 font-meutasRegular "
+            className="xl:text-4xl font-meutasRegular md:font-meutasRegular text-[14px] text-gray-100 pt-4 pb-6 md:pt-6 lg:text-[15px] md:text-[14px] md:pb-4"
           >
             Begin Your Process By Selecting Your Job of Interest
           </motion.h3>
@@ -57,8 +57,13 @@ const NewZealandHero = () => {
             viewport={{ once: true }}
             className="font-meutaslight md:font-meutasLight text-[28px] text-3xl text-gray-100 pt-4 pb-6 md:pt-6  md:pb-4 flex items-center"
           >
-            <img src={clock} className="w-16 h-16 mr-3" />4 - 6 Months
-            Processing Time
+            <img
+              src={clock}
+              className="xl:w-[64px] xl:h-[64px] lg:w-[16px] lg:h-[16px] sm sm:h-[16px] sm:w-[16px] mr-3"
+            />
+            <span className="xl:text-[32px] md:text-[24px] font-meutaslight md:font-meutasLight text-[14px] text-gray-100 pt-4 pb-6 md:pt-6 lg:text-[15px] md:pb-4">
+              4 - 6 Months Processing Time
+            </span>
           </motion.div>
         </div>
       </div>

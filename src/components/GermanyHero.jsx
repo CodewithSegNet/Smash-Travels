@@ -4,7 +4,7 @@ import clock from "../assets/clock.png";
 import stamp from "../assets/carbon-stamp-icon.svg";
 import { fadeIn } from "../variants";
 
-const DenmarkHero = () => {
+const GermanyHero = () => {
   return (
     <div className="flex md:px-14 p-4 mt-[2rem] md:mt-[3rem] xl:mt-[5rem] max-w-screen-2xl mx-auto max-h-[560px] grow relative items-end items-none md:items-center">
       <div className="flex md:flex-row flex-col w-full">
@@ -17,7 +17,7 @@ const DenmarkHero = () => {
               viewport={{ once: true }}
               className="xl:text-7xl font-meutasBold md:text-4xl sm:3xl lg:text-6xl text-3xl text-white leading-[1.2]"
             >
-              Relocate To Denmark
+              Relocate To Germany
             </motion.h1>
             <motion.h1
               variants={fadeIn("up", 0.4)}
@@ -38,7 +38,7 @@ const DenmarkHero = () => {
               viewport={{ once: true }}
               className="xl:text-7xl font-meutasBold md:text-4xl lg:text-6xl text-3xl text-white"
             >
-              Relocate to Denmark Today With SmashTravels
+              Relocate to Germany Today With SmashTravels
             </motion.h1>
           </div>
           <motion.h3
@@ -46,7 +46,7 @@ const DenmarkHero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
-            className="text-4xl sm:text-[10px] text-gray-100 pt-4 pb-6 md:pt-6 font-meutasRegular "
+            className="text-4xl text-gray-100 pt-4 pb-6 md:pt-6 font-meutasRegular "
           >
             Begin Your Process By Selecting Your Job of Interest
           </motion.h3>
@@ -66,4 +66,4 @@ const DenmarkHero = () => {
   );
 };
 
-export default DenmarkHero;
+export default GermanyHero;
