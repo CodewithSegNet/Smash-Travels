@@ -14,7 +14,7 @@ const PackagePricing = ({ country }) => {
           Select Preferred Package
         </p>
       </div>
-      <div className="px-1 mx-6 h-[50px] my-4 shadow-[-1px_0px_7px_1px_rgba(0,_0,_0,_0.1)] rounded-full text-[13.5px] flex flex-nowrap justify-center items-center text-newgray gap-x-2">
+      <div className="px-1 mx-6 h-[50px] my-4 shadow-[-1px_0px_7px_1px_rgba(0,_0,_0,_0.1)] rounded-full text-[12px] flex flex-nowrap justify-center items-center text-newgray gap-x-2">
         <img src={notice} alt="" />
         <span className="text-secondary font-meutasBold whitespace-nowrap">
           Please Note:

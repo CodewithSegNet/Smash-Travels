@@ -5,6 +5,7 @@ import JobNewZealand from "./pages/newZealand";
 import JobNetherlands from "./components/JobNetherlands";
 import NewZealand from "./pages/newZealand";
 import Netherlands from "./pages/netherlands";
+import Canada from "./pages/canada";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/passport-services" element={<PassportPage />} />
           <Route path="/job-new-zealand" element={<NewZealand />} />
           <Route path="/job-netherlands" element={<Netherlands />} />
+          <Route path="/job-canada" element={<Canada />} />
         </Routes>
       </BrowserRouter>
     </div>
