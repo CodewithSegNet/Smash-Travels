@@ -3,17 +3,8 @@ import backgroundImageMedium from "../../assets/travels2.webp";
 import backgroundImageSmall from "../../assets/travels3.webp";
 
 // import { LazyLoadImage } from "react-lazy-load-image-component";
-import Hero from "../../components/Hero";
-import Navbar from "../../components/countryNav";
-import Card from "../../components/BoardCard";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Ads from "../../components/Ads";
-import Bookings from "../../components/BookingsPartner";
-import Cards from "../../components/Card";
-import Whychooseus from "../../components/Whychooseus";
 import Footer from "../../components/Footer";
-import Testimonies from "../../components/Testimonies";
-import Faq from "../../components/Faq";
 import JobNorway from "../../components/JobNorway";
 import NorwayHero from "../../components/NorwayHero";
 import CountryNavbar from "../../components/countryNav";

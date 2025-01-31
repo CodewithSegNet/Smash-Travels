@@ -3,25 +3,11 @@ import backgroundImageMedium from "../../assets/travels2.webp";
 import backgroundImageSmall from "../../assets/travels3.webp";
 
 // import { LazyLoadImage } from "react-lazy-load-image-component";
-import Hero from "../../components/Hero";
-import Navbar from "../../components/countryNav";
-import Card from "../../components/BoardCard";
+
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Ads from "../../components/Ads";
-import Bookings from "../../components/BookingsPartner";
-import Cards from "../../components/Card";
-import Whychooseus from "../../components/Whychooseus";
 import Footer from "../../components/Footer";
-import Testimonies from "../../components/Testimonies";
-import Faq from "../../components/Faq";
-import JobNewZealand from "../../components/JobNewZealand";
-import NewZealandHero from "../../components/NewZealndHero";
 import CountryNavbar from "../../components/countryNav";
 import PackagePricing from "../../components/PackagePricing";
-import Cardd from "../../components/Cardd";
-import JobNetherlands from "../../components/JobNetherlands";
-import DenmarkHero from "../../components/DenmarkHero";
-import JobDenmark from "../../components/JobDenmark";
 import CroatiaHero from "../../components/CroatiaHero";
 import JobCroatia from "../../components/JobCroatia";
 
