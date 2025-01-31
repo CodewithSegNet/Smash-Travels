@@ -7,6 +7,7 @@ import NewZealand from "./pages/newZealand";
 import Netherlands from "./pages/netherlands";
 import Canada from "./pages/canada";
 import Norway from "./pages/norway";
+import Denmark from "./pages/denmark";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/job-netherlands" element={<Netherlands />} />
           <Route path="/job-canada" element={<Canada />} />
           <Route path="/job-norway" element={<Norway />} />
+          <Route path="/job-denmark" element={<Denmark />} />
         </Routes>
       </BrowserRouter>
     </div>
