@@ -13,6 +13,8 @@ import Denmark from "./pages/denmark";
 import Germany from "./pages/germany";
 import Luxembourg from "./pages/luxembourg";
 import Croatia from "./pages/croatia";
+import AboutUs from "./pages/aboutUs";
+import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/passport-services" element={<PassportPage />} />
           <Route path="/work-visa" element={<WorkVisa />} />
           <Route path="/job-new-zealand" element={<JobNewZealand />} />
