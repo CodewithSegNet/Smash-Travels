@@ -44,7 +44,7 @@ const Footer = () => {
               Company
             </h1>
             <ul className="space-y-3">
-              <Link to="" className="block hover:text-secondary text-gray-200">
+              <Link to="/about-us" className="block hover:text-secondary text-gray-200">
                 About Us
               </Link>
               <Link

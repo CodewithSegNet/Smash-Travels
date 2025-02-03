@@ -39,12 +39,12 @@ const Navbar = () => {
     },
     {
       link: "About Us",
-      path: "/about",
+      path: "/about-us",
       ariaLabel: "Explore opportunities travels and visa processes with smash travels",
     },
     {
         link: "Contact Us",
-        path: "/contact",
+        path: "/contact-us",
         ariaLabel: "Experience seamless customer service with smash travels"
       },
   ];
@@ -225,7 +225,7 @@ const Navbar = () => {
                 </div>
 
               <div className='flex items-center gap-1 hover:text-secondary text-white transition-all duration-300'>
-                 <NavLink to='' aria-label="" className='text-md'>About Us</NavLink>
+                 <NavLink to='/about-us' aria-label="" className='text-md'>About Us</NavLink>
               </div>
               <div className='flex items-center gap-1 hover:text-secondary text-white transition-all duration-300'>
                  <NavLink to='/contact-us' aria-label="" className='text-md'>Contact Us</NavLink>

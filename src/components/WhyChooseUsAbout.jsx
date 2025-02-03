@@ -36,8 +36,9 @@ const WhychooseusAbout = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-      className="max-w-screen-2xl mx-auto my-[3rem] md:my-[4rem]"
+      className="max-w-[1289px] mx-auto my-[3rem] md:my-[4rem]"
     >
+      <div className="mx-6">
       <div>
         <h2 className="text-center font-meutasRegular text-2xl lg:text-4xl text-regular font-bold mb-4 md:mb-8">
           Why Choose Us
@@ -45,14 +46,14 @@ const WhychooseusAbout = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
         {read.map((item, index) => (
-          <div key={index} className="p-6">
+          <div key={index} className="">
             <img
               src={item.img}
               alt={item.title}
               className="w-full h-52 object-contain rounded-t-[10px]"
             />
             <div className="pt-2 px-2">
-              <h3 className="font-semibold font-meutasBold text-regular md:text-xl">
+              <h3 className="font-semibold font-meutasRegular text-regular md:text-xl">
                 {item.title}
               </h3>
               <p className="pt-2 leading-[1.5] font-meutasLight text-sm md:text-md text-regular">
@@ -62,6 +63,8 @@ const WhychooseusAbout = () => {
           </div>
         ))}
       </div>
+      </div>
+      
     </motion.div>
   );
 };

@@ -25,36 +25,43 @@ const Office = () => {
   ];
 
   return (
-    <div className="xl:mt-[250px] md:mt-[200px] mt-[70px] mb-[60px] flex justify-center shadow-[-1px_0px_7px_1px_rgba(0,_0,_0,_0.1)] mx-[64px] rounded-2xl py-[64px]  gap-[120px]">
+    <div className="max-w-screen-2xl mx-auto">
+ <div className="flex-col md:flex-row  mx-6 text-regular mt-[6rem]  md:mt-[9rem] mb-[3rem] md:mb-[5rem] flex justify-center shadow-md rounded-2xl py-[44px] gap-[50px] lg:gap-[120px]">
       {offices.map((item) => {
         return (
-          <div className="w-[472px] flex justify-center items-center flex-col">
+          <div className="flex flex-col justify-center text-center font-meutasRegular items-center">
+            <div className="flex flex-col px-6">
             <div>
-              <h3 className="font-meutasRegular text-[40px] mb-3">
+              <h3 className="font-meutasRegular text-xl font-bold md:text-3xl mb-3">
                 {item.title}
               </h3>
             </div>
-            <div className="text-center text-xl font-meutasLight mb-10">
+            <div className="text-center lg:text-xl font-meutasRegular mb-7">
               {item.address}
             </div>
-            <div className="text-xl font-meutasLight ">
+            <div className="text-xl font-meutasRegular">
               <div className="mb-3 flex gap-2 ">
                 <img src={phone} alt="phone" />
-                <span>{item.phone}</span>
+                <span className="text-sm lg:text-xl">{item.phone}</span>
               </div>
               <div className="mb-3 flex gap-2">
                 <img src={mail} alt="email" />
-                <span>{item.email}</span>
+                <span className="text-sm lg:text-xl font-meutasRegular">{item.email}</span>
               </div>
               <div className="flex gap-2">
                 <img src={mail} alt="support email" />
-                <span>{item.supportEmail}</span>
+                <span className="text-sm lg:text-xl">{item.supportEmail}</span>
               </div>
             </div>
           </div>
-        );
-      })}
+    
+            </div>
+             );
+            })}
+            </div>
+
     </div>
+   
   );
 };
 

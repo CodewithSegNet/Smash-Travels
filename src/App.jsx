@@ -28,8 +28,8 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route path="/passport-services" element={<PassportPage />} />
           <Route path="/work-visa" element={<WorkVisa />} />
           <Route path="/job-new-zealand" element={<JobNewZealand />} />

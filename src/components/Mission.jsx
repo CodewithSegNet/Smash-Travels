@@ -2,12 +2,16 @@ import React from "react";
 
 const Mission = ({ title, subtitle }) => {
   return (
-    <div className="mt-[60px] mx-[192px]">
-      <h3 className="font-meutasRegular  pt-4 pb-6 md:pt-6 lg:text-[40px] md:text-[14px] md:pb-4 flex justify-center mb-6">
+    <div className="max-w-screen-2xl mx-auto">
+    <div className=" mt-[40px] mx-6">
+      <h3 className="text-regular text-center text-2xl font-meutasRegular lg:text-4xl pt-4 pb-6 md:pt-6 font-bold md:pb-4 flex justify-center">
         Our {title}
       </h3>
-      <p className="font-meutasRegular text-[16px]/10 ">{subtitle}</p>
+      <p className="font-meutasRegular text-regular text-sm/7 md:text-md ">{subtitle}</p>
     </div>
+
+    </div>
+
   );
 };
 

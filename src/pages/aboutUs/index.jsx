@@ -1,52 +1,60 @@
 import backgroundImage from "../../assets/aboutUs.png";
-import backgroundImageMedium from "../../assets/travels2.webp";
-import backgroundImageSmall from "../../assets/travels3.webp";
+import backgroundImageMedium from "../../assets/aboutUs.png";
+import backgroundImageSmall from "../../assets/aboutUs.png";
 
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import Navbar from "../../components/Navbar";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Whatwedo from "../../components/WhatWeDo";
+import Whatwedo from "../../components/Whatwedo";
 import Footer from "../../components/Footer";
 import Faq from "../../components/Faq";
 import Testimonies from "../../components/Testimonies";
 import AboutUsHero from "../../components/AboutUsHero";
 import CoreValues from "../../components/CoreValues";
 import Mission from "../../components/Mission";
-import Whychooseus from "../../components/WhyChooseUsAbout";
 import WhychooseusAbout from "../../components/WhyChooseUsAbout";
 
 const AboutUs = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Smash Travels | Home</title>
+        <title>
+          Smash Travels | Affordable Travel Packages & Visa Services
+        </title>
         <meta
           name="description"
-          content="Affordable travel packages and visa services."
+          content="Explore affordable travel packages, visa services, and hassle-free international travel experiences with Smash Travels."
         />
         <meta
           name="keywords"
-          content="visa services, travel agency, affordable travel packages, international travel, tourism, visa assistance, travel deals, cheap flights, holiday packages"
+          content="affordable travel packages, visa services, travel agency, international travel, tourism, visa assistance, cheap flights, family holiday packages, travel deals, group travel"
         />
-        <meta property="og:title" content="Smash Travels | Home" />
+        <meta
+          property="og:title"
+          content="Smash Travels | Affordable Travel Packages & Visa Services"
+        />
         <meta
           property="og:description"
-          content="Explore travel packages with Smash Travels."
+          content="Smash Travels offers affordable travel packages, visa assistance, and international travel services to make your journey seamless and exciting."
         />
         <meta property="og:url" content="https://www.smashtravels.com" />
         <meta
+          property="og:image"
+          content="https://www.smashtravels.com/assets/aboutUs.png"
+        />
+        <meta
           name="twitter:title"
-          content="Visa Services & Travel Agency | Smash Travels"
+          content="Affordable Travel Packages & Visa Services | Smash Travels"
         />
         <meta
           name="twitter:description"
-          content="Smash Travels offers affordable visa services, top-notch travel packages, and hassle-free international travel experiences."
+          content="Smash Travels provides top-notch visa services and travel packages for international travel, holidays, and more."
         />
         <meta
           name="twitter:image"
-          content="https://www.smashtravels.com/assets/logos.png"
+          content="https://www.smashtravels.com/assets/aboutUs.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://www.smashtravels.com" />
