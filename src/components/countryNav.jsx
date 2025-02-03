@@ -36,7 +36,7 @@ const CountryNavbar = () => {
               />
             </svg>
 
-            <span className="font-meutasRegular lg:text-2xl transition-all pt-1 duration-300 text-gray-200 group-hover:text-primary">
+            <span className="font-meutasRegular lg:text-2xl transition-all md:pt-1 duration-300 text-gray-200 group-hover:text-primary">
               Go Back
             </span>
           </NavLink>
