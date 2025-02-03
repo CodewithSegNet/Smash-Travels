@@ -44,10 +44,10 @@ const PackagePricing = ({ country }) => {
           Select Preferred Package
         </p>
       </div>
-      <div className="px-8 md:px-1 mx-auto lg:mx-6 w-[100%] h-[150px] md:h-[50px] my-2 shadow-md rounded-full lg:text-[12px] text-[8px] flex flex-col md:flex-row flex-nowrap justify-center items-center md:items-center text-newgray gap-x-2">
+      <div className="px-8 md:px-1 mx-auto w-[100%] md:w-[84%] h-[150px] md:h-[50px] my-2 shadow-md rounded-full lg:text-[12px] text-[8px] flex flex-col md:flex-row flex-nowrap justify-center items-center md:items-center text-newgray">
         <img src={notice} alt="" />
-        <span className=" font-meutasBold text-primary text-[13px] md:pt-[1px] whitespace-nowrap">Please Note:</span>
-        <span className="text-[11px] md:text-[12px]">
+        <span className=" font-meutasBold text-primary text-[13px] md:text-[15px] md:pt-[4px] whitespace-nowrap">Please Note:</span>
+        <span className="text-[11px] pl-2 md:font-medium md:text-[12px]">
           This package covers all expenses ranging from your processing, visa,
           and accommodation. This package does not in any way cover the expense
           of your flight tickets to your desired destination.
@@ -89,7 +89,7 @@ const PackagePricing = ({ country }) => {
         <div className="shadow-md lg:mx-[64px] sm:mx-[20px] xs:mx-[20px] rounded-[24px] grid xl:grid-cols-2 grid-cols-1 mt-[5rem] md:mt-[6.5rem] py-[40px] md:py-[70px] lg:px-[120px] sm:px-[20px] gap-10">
           {packages.map((item) => (
             <div key={item.title} className=" grid place-items-center ">
-              <div className="text-lg text-[24px] font-meutasRegular text-newgray mb-[14px]">
+              <div className="xl:text-[24px] text-[12px] md:text-[14px] lg:text-[24px] font-meutasRegular text-newgray mb-[14px]">
                 {item.title}
               </div>
               <Money id="multiplepackage" Amount={item.amount} />

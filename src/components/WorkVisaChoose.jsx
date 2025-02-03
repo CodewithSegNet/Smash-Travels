@@ -51,17 +51,15 @@ const WorkVisaWhychooseus = () => {
         whileInView={"show"}
         viewport={{ once: true}}
     className="max-w-[1289px] mx-auto pt-[4.4rem] pb-[1.8rem] md:pb-[0rem] md:pt-[13.5rem]">
-      <div className="">
-
-      </div>
+      <div className="mx-6">
       <div>
         <h2 className="text-center font-meutasRegular text-2xl lg:text-4xl text-regular font-bold mb-1 md:mb-5">Why Choose Us</h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8">
         {read.map((item, index) => (
           <div
             key={index}
-            className="text-regular md:pb-[2rem] mx-6 md:mx-6 bg-white rounded-xl"
+            className="text-regular md:pb-[2rem] bg-white rounded-xl"
           >
             <img src={item.img} alt={item.title} className="w-full h-52 object-contain rounded-t-[10px]" />
             <div className="pt-2 px-2">
@@ -71,6 +69,8 @@ const WorkVisaWhychooseus = () => {
           </div>
         ))}
       </div>
+      </div>
+    
     </motion.div>
   );
 };
