@@ -61,7 +61,7 @@ const WorkVisaWhychooseus = () => {
         {read.map((item, index) => (
           <div
             key={index}
-            className="p-6"
+            className="text-regular md:pb-[2rem] mx-6 md:mx-6 bg-white rounded-xl"
           >
             <img src={item.img} alt={item.title} className="w-full h-52 object-contain rounded-t-[10px]" />
             <div className="pt-2 px-2">
