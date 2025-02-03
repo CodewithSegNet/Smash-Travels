@@ -56,7 +56,7 @@ const SuccessRate = () => {
   }, [isInView1, isInView2, isInView3, controls1, controls2, controls3]);
 
   return (
-    <section className="max-w-screen-2xl w-[100%] mt-[2rem] md:mt-[3rem] xl:mt-[4rem] mx-auto px-7">
+    <section className="max-w-screen-2xl pb-[3rem] md:pb-[5rem] w-[100%] mt-[2rem] md:mt-[3rem] xl:mt-[4rem] mx-auto px-7">
       <div>
         <motion.div
           variants={fadeIn("up", 0.3)}
@@ -77,7 +77,7 @@ const SuccessRate = () => {
             initial="hidden"
             whileInView="show"
             ref={ref1}
-            className="py-[3rem] lg:py-[3.5rem] font-black text-center text-4xl lg:text-7xl font-meutasBold text-primary"
+            className="pt-[3rem] lg:pt-[3.5rem] font-black text-center text-4xl lg:text-7xl font-meutasBold text-primary"
           >
             <span>+{Math.floor(count1).toLocaleString()}</span>
 
@@ -91,7 +91,7 @@ const SuccessRate = () => {
             initial="hidden"
             whileInView="show"
             ref={ref2}
-            className="py-[3rem] lg:py-[3.5rem] font-black text-center text-4xl lg:text-7xl font-meutasBold text-primary"
+            className="pt-[3rem] lg:pt-[3.5rem] font-black text-center text-4xl lg:text-7xl font-meutasBold text-primary"
           >
             <span>+{Math.floor(count2).toLocaleString()}</span>
 
@@ -106,7 +106,7 @@ const SuccessRate = () => {
             initial="hidden"
             whileInView="show"
             ref={ref3}
-            className="py-[3rem] lg:py-[3.5rem] font-black text-center text-4xl lg:text-7xl font-meutasBold text-primary"
+            className="pt-[3rem] lg:pt-[3.5rem] font-black text-center text-4xl lg:text-7xl font-meutasBold text-primary"
           >
             <span>+{Math.floor(count3).toLocaleString()}</span>
             <p className="text-newgray text-[16px] font-medium pt-4 font-meutasRegular">Annual Target</p>

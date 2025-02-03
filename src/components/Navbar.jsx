@@ -150,7 +150,7 @@ const Navbar = () => {
                     <div className="absolute top-[100%] left-0 bg-white shadow-lg rounded-lg mt-2 z-10 w-[350px]">
                       <ul className="py-2">
                         <li className="px-4 py-2 hover:bg-gray-100">
-                          <NavLink to="/service1" className="text-black">
+                          <NavLink to="" className="text-black">
                           <div className='flex items-center'>
                             <div className='w-10 h-6 pr-3'>
                               <img className='text-primary' src={airplane} alt="" />
@@ -192,7 +192,7 @@ const Navbar = () => {
                           </NavLink>
                         </li>
                         <li className="px-4 py-2 hover:bg-gray-100">
-                        <NavLink to="/service2" className="text-black">
+                        <NavLink to="" className="text-black">
                           <div className='flex items-center'>
                             <div className='w-10 h-6 pr-3'>
                               <img className='text-primary' src={airport} alt="" />
@@ -206,7 +206,7 @@ const Navbar = () => {
                           </NavLink>
                         </li>
                         <li className="px-4 py-2 hover:bg-gray-100">
-                        <NavLink to="/service2" className="text-black">
+                        <NavLink to="" className="text-black">
                           <div className='flex items-center'>
                             <div className='w-10 h-6 pr-3'>
                               <img className='text-primary' src={car} alt="" />
@@ -225,10 +225,10 @@ const Navbar = () => {
                 </div>
 
               <div className='flex items-center gap-1 hover:text-secondary text-white transition-all duration-300'>
-                 <NavLink to='/contact' aria-label="" className='text-md'>About Us</NavLink>
+                 <NavLink to='' aria-label="" className='text-md'>About Us</NavLink>
               </div>
               <div className='flex items-center gap-1 hover:text-secondary text-white transition-all duration-300'>
-                 <NavLink to='/contact' aria-label="" className='text-md'>Contact Us</NavLink>
+                 <NavLink to='/contact-us' aria-label="" className='text-md'>Contact Us</NavLink>
               </div>
                 </ul>
            

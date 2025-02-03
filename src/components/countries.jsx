@@ -56,7 +56,7 @@ const Countries = () => {
     ];
   
     return (
-      <div className="flex flex-col w-full md:px-14 p-4 mt-[2rem] md:mt-[3rem] xl:mt-[4rem] max-w-screen-2xl mx-auto">
+      <div className="flex flex-col w-full md:px-14 p-4 mt-[2rem] md:mt-[1.5rem] xl:mt-[1.5rem] max-w-screen-2xl mx-auto">
         {/* Header Section */}
         <div className="w-full text-center">
           <h1 className="text-regular font-meutasRegular font-bold text-2xl lg:text-4xl">
@@ -68,7 +68,7 @@ const Countries = () => {
         </div>
   
         {/* Country Cards */}
-        <div className="shadow-xl rounded-xl mt-10 py-8 px-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="shadow-xl rounded-xl mt-10 md:mt-12 py-8 px-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {countryinfo.map((country, index) => (
             <Link to={country.linkTo} key={index} className="p-2 rounded-lg mx-auto text-center flex flex-col items-center cursor-pointer w-[85%] md:w-[55%] hover:scale-105 transition-transform duration-300 bg-white">
               <img src={country.imgSrc} alt={country.country} className="w-[100px] h-[100px] rounded-full" />

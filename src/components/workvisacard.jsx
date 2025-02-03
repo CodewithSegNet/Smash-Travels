@@ -57,18 +57,18 @@ const read = [
 // Individual card component
 const VisaProcessCard = ({ img, title, description, index }) => {
   return (
-    <div className="text-regular mx-6 md:mx-6 bg-white rounded-xl">
+    <div className="text-regular md:pb-[2rem] mx-6 md:mx-6 bg-white rounded-xl">
       <div className="relative">
         <img
           src={img}
           alt={title}
           className="w-full h-52 rounded-2xl object-contain"
         />
-        <div className="absolute top-[20px] md:top-[33px] lg:top-[20px] left-[18px] md:left-[15px] flex text-sm justify-center items-center rounded-full w-10 h-10 text-white bg-black font-semibold bg-opacity-60">
+        <div className="absolute top-[29px] md:top-[33px] lg:top-[20px] left-[18px] md:left-[15px] flex text-sm justify-center items-center rounded-full w-10 h-10 text-white bg-black font-semibold bg-opacity-20">
           <span>{index + 1}</span>
         </div>
       </div>
-      <div className="pt-4 px-2">
+      <div className="pt-2">
         <h3 className="font-semibold font-meutasBold text-lg">{title}</h3>
         <p className="pt-2 leading-[1.5] font-meutasLight text-sm md:text-md">
           {description}
@@ -86,14 +86,14 @@ const VisaProcess = ({ title, steps, className }) => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className={`max-w-[1289px] mx-auto pt-[6rem] md:pt-[7rem] ${className}`}
+      className={`max-w-[1289px] mx-auto pt-[6rem] md:pt-[8rem] ${className}`}
     >
       <div className="text-center mb-3 md:mb-8">
         <h2 className="font-meutasRegular text-2xl lg:text-4xl font-bold">
           {title}
         </h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-4">
         {steps.map((step, index) => (
           <VisaProcessCard key={index} {...step} index={index} />
         ))}

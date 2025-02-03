@@ -55,7 +55,7 @@ const WorkVisaWhychooseus = () => {
 
       </div>
       <div>
-        <h2 className="text-center font-meutasRegular text-2xl lg:text-4xl text-regular font-bold mb-4 md:mb-5">Why Choose Us</h2>
+        <h2 className="text-center font-meutasRegular text-2xl lg:text-4xl text-regular font-bold mb-1 md:mb-5">Why Choose Us</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-4">
         {read.map((item, index) => (

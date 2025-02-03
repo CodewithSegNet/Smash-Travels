@@ -16,7 +16,7 @@ const CountryBoard = () => {
     <>
     
     
-    <div className="relative md:w-[70%] mx-6 md:mx-auto md:max-h-[806px]">
+    <div className="relative md:w-[80%] mx-6 md:mx-auto md:max-h-[806px]">
       <img
         src={backgroundImage}
         srcSet={`${backgroundImageSmall} 720w, ${backgroundImageMedium} 1440w, ${backgroundImage} 2880w`}
@@ -26,7 +26,7 @@ const CountryBoard = () => {
         loading="eager"
       />
 
-<div className='absolute right-[60px] md:right-[100px] top-[100px] bg-white rounded-full p-0 m-0'>
+<div className='absolute right-[80px] md:right-[100px] top-[100px] bg-white rounded-full p-0 m-0'>
 
 <img src={norway}  alt="airplane icon"/> 
 
@@ -34,7 +34,7 @@ const CountryBoard = () => {
 
     </div>
 
-    <div className="flex md:px-14 w-[90%] md:w-[70%] p-4 mt-[2rem] md:mt-[3rem] mx-auto xl:mt-[5rem] max-w-screen-2xl h-[400px] md:max-h-[560px] relative items-end md:items-center">
+    <div className="flex md:px-14 w-[90%] md:w-[70%] p-4 mt-[2rem] md:mt-[4rem] mx-auto xl:mt-[7rem] max-w-screen-2xl h-[400px] md:max-h-[560px] relative items-end md:items-center">
       <div className="flex md:flex-row flex-col w-full">
         <div className="w-full flex flex-col mt-3 md:mt-0">
           <div className='hidden md:block max-w-[600px]'>
@@ -43,7 +43,7 @@ const CountryBoard = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="xl:text-7xl font-meutasBold md:text-4xl lg:text-6xl text-3xl text-white !leading-[90px]"
+              className="xl:text-7xl font-meutasBold md:text-4xl lg:text-6xl text-3xl text-white !leading-[60px] md:!leading-[70px] lg:!leading-[90px]"
             >
               Norway,
             </motion.h1>
@@ -52,7 +52,7 @@ const CountryBoard = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="xl:text-7xl font-meutasBold md:text-4xl lg:text-6xl text-3xl !leading-[90px] text-white"
+              className="xl:text-7xl font-meutasBold md:text-4xl lg:text-6xl text-3xl !leading-[70px] lg:!leading-[90px] text-white"
             >
               Our Best-Seller. Relocate Today!
             </motion.h1>

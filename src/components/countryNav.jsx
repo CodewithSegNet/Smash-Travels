@@ -19,16 +19,16 @@ const CountryNavbar = () => {
       >
         <div className="flex items-center justify-between w-[100%] md:pb-3">
           <NavLink
-            to="/"
-            className="h-[24px] justify-center items-center flex rounded-md"
+            to="/work-visa"
+            className="h-[24px] pt-1 justify-center items-center flex rounded-md"
             aria-label="Smash Travels home page"
           >
             <img
               src={logo}
               alt="Smash Travels - Affordable travel packages and visa services"
-              className=" w-6 mr-2"
+              className="w-5 h-5 md:w-[24px] flex items-center pb-1 justify-center md:h-[24px] mr-3"
             />
-            <span className="text-2xl">Go Back</span>
+            <span className="font-meutasRegular lg:text-2xl">Go Back</span>
           </NavLink>
         </div>
       </nav>

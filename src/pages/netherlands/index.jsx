@@ -1,26 +1,14 @@
-import backgroundImage from "../../assets/netherlands.png";
-import backgroundImageMedium from "../../assets/travels2.webp";
-import backgroundImageSmall from "../../assets/travels3.webp";
+import backgroundImage from "../../assets/netherlandHero.webp";
+import backgroundImageMedium from "../../assets/netherlandHero.webp";
+import backgroundImageSmall from "../../assets/netherlandHero.webp";
 
 // import { LazyLoadImage } from "react-lazy-load-image-component";
-import Hero from "../../components/Hero";
-import Navbar from "../../components/countryNav";
-import Card from "../../components/BoardCard";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Ads from "../../components/Ads";
-import Bookings from "../../components/BookingsPartner";
-import Cards from "../../components/Card";
-import Whychooseus from "../../components/Whychooseus";
 import Footer from "../../components/Footer";
-import Testimonies from "../../components/Testimonies";
-import Faq from "../../components/Faq";
-import JobNewZealand from "../../components/JobNewZealand";
-import NewZealandHero from "../../components/NewZealndHero";
 import CountryNavbar from "../../components/countryNav";
 import PackagePricing from "../../components/PackagePricing";
-import Cardd from "../../components/Cardd";
 import JobNetherlands from "../../components/JobNetherlands";
-// import NetherlandsHero from "../../components/netherlandsHero";
+import NetherlandsHero from "../../components/NetherlandsHero";
 
 const Netherlands = () => {
   return (
@@ -52,7 +40,7 @@ const Netherlands = () => {
           />
           <meta
             name="twitter:image"
-            content="https://www.smashtravels.com/assets/logos.png"
+            content="https://www.smashtravels.com/assets/netherlandHero.webp"
           />
           <meta name="twitter:card" content="summary_large_image" />
           <link rel="canonical" href="https://www.smashtravels.com" />
@@ -66,7 +54,7 @@ const Netherlands = () => {
               srcSet={`${backgroundImageSmall} 720w, ${backgroundImageMedium} 1440w, ${backgroundImage} 2880w`}
               sizes="(min-width: 2880px) 2880px, 100vw"
               alt="Explore travel packages and visa services with Smash Travels"
-              className="absolute object-cover w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px] bg-opacity-50 bg-black object-fit inset-0"
+              className="absolute object-cover w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px] bg-opacity-80 bg-black object-fit inset-0"
               loading="eager"
             />
             <div className="absolute inset-0 bg-black bg-opacity-30 h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px] "></div>

@@ -1,13 +1,17 @@
-import backgroundImage from "../../assets/canada.png";
-import backgroundImageMedium from "../../assets/travels2.webp";
-import backgroundImageSmall from "../../assets/travels3.webp";
+import backgroundImage from "../../assets/canadaHero.webp";
+import backgroundImageMedium from "../../assets/canadaHero.webp";
+import backgroundImageSmall from "../../assets/canadaHero.webp";
 
 // import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import { Helmet, HelmetProvider } from "react-helmet-async";
+
 import Footer from "../../components/Footer";
+
 import CanadaHero from "../../components/CanadaHero";
 import CountryNavbar from "../../components/countryNav";
 import PackagePricing from "../../components/PackagePricing";
+
 import JobCanada from "../../components/JobCanada";
 
 const Canada = () => {
@@ -15,35 +19,41 @@ const Canada = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Netherlands Jobs | Smash Travels</title>
+          <title>Canada Visa & Jobs | Smash Travels</title>
           <meta
             name="description"
-            content="Affordable travel packages and visa services."
+            content="Affordable Canada travel packages, visa assistance, and job opportunities."
           />
           <meta
             name="keywords"
-            content="visa services, travel agency, affordable travel packages, international travel, tourism, visa assistance, travel deals, cheap flights, holiday packages"
+            content="Canada visa, Canada travel, work in Canada, visa assistance, immigration services, travel agency, affordable travel packages, international travel, study in Canada, Canada jobs"
           />
-          <meta property="og:title" content="Smash Travels | Home" />
+          <meta
+            property="og:title"
+            content="Smash Travels | Canada Visa & Jobs"
+          />
           <meta
             property="og:description"
-            content="Explore travel packages with Smash Travels."
+            content="Explore Canada visa services, job opportunities, and travel packages with Smash Travels."
           />
-          <meta property="og:url" content="https://www.smashtravels.com" />
+          <meta
+            property="og:url"
+            content="https://www.smashtravels.com/job-canada"
+          />
           <meta
             name="twitter:title"
-            content="Visa Services & Travel Agency | Smash Travels"
+            content="Canada Visa & Jobs | Smash Travels"
           />
           <meta
             name="twitter:description"
-            content="Smash Travels offers affordable visa services, top-notch travel packages, and hassle-free international travel experiences."
+            content="Get expert Canada visa assistance, job search support, and budget-friendly travel deals."
           />
           <meta
             name="twitter:image"
-            content="https://www.smashtravels.com/assets/logos.png"
+            content="https://www.smashtravels.com/assets/canadaHero.webp"
           />
           <meta name="twitter:card" content="summary_large_image" />
-          <link rel="canonical" href="https://www.smashtravels.com" />
+          <link rel="canonical" href="https://www.smashtravels.com/job-canada" />
         </Helmet>
 
         {/* Hero Section */}
@@ -54,7 +64,7 @@ const Canada = () => {
               srcSet={`${backgroundImageSmall} 720w, ${backgroundImageMedium} 1440w, ${backgroundImage} 2880w`}
               sizes="(min-width: 2880px) 2880px, 100vw"
               alt="Explore travel packages and visa services with Smash Travels"
-              className="absolute object-cover w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px] bg-opacity-50 bg-black object-fit inset-0"
+              className="absolute object-cover w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px] bg-opacity-80 bg-black object-fit inset-0"
               loading="eager"
             />
             <div className="absolute inset-0 bg-black bg-opacity-30 h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px] "></div>

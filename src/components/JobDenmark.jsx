@@ -7,14 +7,8 @@ import engineering from "../assets/engineering.png";
 import roomAttenders from "../assets/roomAttenders.png";
 import customerRep from "../assets/customerRep.png";
 
-import img2 from "../assets/image_fx_27.png";
-import img3 from "../assets/image_fx_29.png";
-import img4 from "../assets/image_fx_30.png";
-import img5 from "../assets/image_fx_31.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import { Link } from "react-router-dom";
-import Money from "./Money";
 import Cardd from "./Cardd";
 
 const read = [
@@ -97,27 +91,28 @@ const JobDenmark = () => {
   };
 
   return (
+    <>
+    <section className="px-7">
     <motion.div
       variants={fadeIn("up", 0.3)}
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-      className="mb-[100px]"
+      className="max-w-[1289px] text-regular mx-auto mt-[30px] md:mt-[50px] lg:mt-[80px] mb-[3rem] md:mb-[3rem] lg:mb-[3rem]"
     >
-      <div className="flex flex-col justify-center items-center mb-[60px]">
-        <p className="text-4xl font-meutasRegular font-bold mb-[20px]">
+      <div className=" flex flex-col justify-center items-center mb-[40px]">
+        <p className="text-center text-regular text-2xl font-meutasRegular lg:text-4xl font-bold mb-[.8rem] md:mb-[1rem]">
           Jobs Available
         </p>
-        <p className="text-xl font-light text-newgray font-meutasRegular ">
+        <p className="md:text-xl font-light text-sm text-newgray font-meutasRegular">
           Below Are The Jobs Available In Denmark
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8">
         {read.map((item, index) => {
           return (
-            <div className="flex justify-center items-center">
+            <div key={index}  className="flex md:pb-[2rem] text-regular justify-center items-center">
               <Cardd
-                key={index}
                 image={item.img}
                 buttonText="Apply Now"
                 description={item.description}
@@ -130,6 +125,8 @@ const JobDenmark = () => {
         })}
       </div>
     </motion.div>
+    </section>
+   </>
   );
 };
 
