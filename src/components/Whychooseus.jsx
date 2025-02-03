@@ -50,11 +50,14 @@ const Whychooseus = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true}}
-    className="max-w-screen-2xl mx-auto my-[3rem] md:my-[4rem]">
+    className="max-w-[1289px] mx-auto my-[3rem] md:my-[4rem]">
+      <div className="">
+
+      </div>
       <div>
         <h2 className="text-center font-meutasRegular text-2xl lg:text-4xl text-regular font-bold mb-4 md:mb-8">Why Choose Us</h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-4">
         {read.map((item, index) => (
           <div
             key={index}

@@ -70,7 +70,7 @@ function Responsive() {
   const slides1 = [
     {
       image1: image,
-      title: "10 Year Passport",
+      title: "10 Years Passport",
       firstlocation: "48 Hours",
       price: "₦300,000",
       pages: "64",
@@ -78,7 +78,7 @@ function Responsive() {
     },
     {
       image1: image,
-      title: "5 Year Passport",
+      title: "5 Years Passport",
       firstlocation: "48 Hours",
       price: "₦150,000",
       pages: "32",
@@ -87,7 +87,7 @@ function Responsive() {
    
     {
       image1: image,
-      title: "10 Year Passport",
+      title: "10 Years Passport",
       firstlocation: "2 Weeks",
       price: "₦200,000",
       pages: "64",
@@ -95,7 +95,7 @@ function Responsive() {
     },
     {
       image1: image,
-      title: "5 Year Passport",
+      title: "5 Years Passport",
       firstlocation: "2 Weeks",
       price: "₦100,000",
       pages: "32",
@@ -108,7 +108,7 @@ function Responsive() {
   const slides2 = [
     {
       image1: image,
-      title: "10 Year Passport Renewal",
+      title: "10 Years Passport Renewal",
       firstlocation: "48 Hours",
       price: "₦300,000",
       pages: "64",
@@ -116,7 +116,7 @@ function Responsive() {
     },
     {
       image1: image,
-      title: "5 Year Passport Renewal",
+      title: "5 Years Passport Renewal",
       firstlocation: "48 Hours",
       price: "₦150,000",
       pages: "32",
@@ -125,7 +125,7 @@ function Responsive() {
 
     {
       image1: image,
-      title: "10 Year Passport Renewal",
+      title: "10 Years Passport Renewal",
       firstlocation: "2",
       price: "₦200,000",
       pages: "64",
@@ -133,7 +133,7 @@ function Responsive() {
     },
     {
       image1: image,
-      title: "10 Year Passport Renewal",
+      title: "10 Years Passport Renewal",
       firstlocation: "2 Weeks",
       price: "₦100,000",
       pages: "34",
@@ -177,7 +177,7 @@ function Responsive() {
 
   return (
     <div className="h-full relative mb-[4rem] md:mb-[5rem] mt-[7rem]">
-      <div className="text-center text-regular text-[18px] lg:text-4xl mb-[2rem]">
+      <div className="text-center text-gray text-[18px] lg:text-4xl mb-[2rem]">
         <h1 className="font-meutasRegular font-semibold">Select Your Desired Package</h1>
       </div>
 

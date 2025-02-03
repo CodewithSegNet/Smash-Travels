@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import Copyright from "../assets/copyright.png";
 import ngnlogo from "../assets/nigeria.svg";
 
-
 const Footer = () => {
   let currentYear = new Date().getFullYear();
 
@@ -18,22 +17,21 @@ const Footer = () => {
       <div className="w-full my-4 flex flex-col md:flex-row gap-2">
         <div className="flex w-full md:flex-row flex-col flex-wrap justify-between gap-3 mt-[1rem] items-start">
           <div className="space-y-4">
-            <h1 className=" text--300 font-meutas font-black mb-4 md:text-xl">Product</h1>
+            <h1 className=" text--300 font-meutas font-black mb-4 md:text-xl">
+              Product
+            </h1>
             <ul className="space-y-3">
-              <Link
-                to="/about"
-                className="block hover:text-secondary text-gray-200"
-              >
+              <Link to="" className="block hover:text-secondary text-gray-200">
                 Flight Booking
               </Link>
               <Link
-                to="/services"
+                to="/work-visa"
                 className="block hover:text-secondary text-gray-200"
               >
                 Work Visa
               </Link>
               <Link
-                to="/driveAndEarn"
+                to="/passport-servicess"
                 className="block hover:text-secondary  text-gray-200"
               >
                 Passport
@@ -42,16 +40,15 @@ const Footer = () => {
           </div>
 
           <div className="space-y-4">
-            <h1 className=" text--300 font-black mb-4 font-meutas md:text-xl">Company</h1>
+            <h1 className=" text--300 font-black mb-4 font-meutas md:text-xl">
+              Company
+            </h1>
             <ul className="space-y-3">
-              <Link
-                to="/about"
-                className="block hover:text-secondary text-gray-200"
-              >
+              <Link to=" " className="block hover:text-secondary text-gray-200">
                 About Us
               </Link>
               <Link
-                to="/services"
+                to="/work-visa"
                 className="block hover:text-secondary text-gray-200"
               >
                 Services
@@ -61,48 +58,41 @@ const Footer = () => {
           <div className="space-y-4">
             <h1 className=" text--300 font-black mb-4 md:text-xl">Resource</h1>
             <ul className="space-y-3">
-              <Link
-                to="/ride-hailing"
-                className="block hover:text-secondary text-gray-200"
-              >
+              <Link to="" className="block hover:text-secondary text-gray-200">
                 Blog
               </Link>
-              <Link
-                to="/delivery"
-                className="block hover:text-secondary text-gray-200"
-              >
+              <Link to="" className="block hover:text-secondary text-gray-200">
                 Support
               </Link>
             </ul>
           </div>
           <div className="flex md:flex-col gap-2">
             <div className="space-y-4">
-              <h4 className="text--300 font-black mb-4 font-meutas md:text-xl">Contact</h4>
+              <h4 className="text--300 font-black mb-4 font-meutas md:text-xl">
+                Contact
+              </h4>
               <ul className="space-y-3">
                 <Link
-                  to="/driveAndEarn"
+                  to="mailto:Support@smashtravels.com"
                   className="block hover:text-secondary text-gray-200"
                 >
                   Support@smashtravels.com
                 </Link>
+
                 <Link
-                  to="/fleets"
+                  to="tel:02013309103"
                   className="block hover:text-secondary text-gray-200"
                 >
                   02013309103 <span className="text-secondary">(HotLine)</span>
                 </Link>
-                {/* <Link
-                  to="/franchise"
-                  className="block hover:text-secondary text-gray-200"
-                >
-                  +234 8144824339 (Lagos Branch)
-                </Link> */}
               </ul>
             </div>
           </div>
 
           <div className="space-y-4">
-            <h1 className=" text--300 font-black mb-4 font-meutas md:text-xl">Legal</h1>
+            <h1 className=" text--300 font-black mb-4 font-meutas md:text-xl">
+              Legal
+            </h1>
             <ul className="space-y-3">
               <Link
                 to="/ride-hailing"
@@ -121,7 +111,10 @@ const Footer = () => {
           <div className="w-full md:pt-8 flex items-center flex-col md:flex-row gap-2">
             <div className="w-full">
               <div className="flex py-4 md:py-0 flex-col md:flex-row items-left md:max-w-[500px] md:justify-between">
-                <a href="/" className="flex w-[100%] md:justify-center lg:mr-[80px] items-center">
+                <a
+                  href="/"
+                  className="flex w-[100%] md:justify-center lg:mr-[80px] items-center"
+                >
                   <img
                     src={logo}
                     alt="Smash Travels - Affordable travel packages and visa services"
@@ -131,31 +124,33 @@ const Footer = () => {
                     Smash Travels
                   </span>
                 </a>
-                 
-                 <a href="/" className="flex md:justify-center w-[100%] items-center">
-                 <img
-                  src={ngnlogo}
-                  alt="Smash Travels - Affordable travel packages and visa services"
-                  className="w-[35px] md:w-[40px] mr-4 flex items-center justify-center"
-                />
-                <span className="w-full md:text-[24px] font-semibold flex">
-                  N G N
-                </span>
-                 </a>
-             
+
+                <a
+                  href="/"
+                  className="flex md:justify-center w-[100%] items-center"
+                >
+                  <img
+                    src={ngnlogo}
+                    alt="Smash Travels - Affordable travel packages and visa services"
+                    className="w-[35px] md:w-[40px] mr-4 flex items-center justify-center"
+                  />
+                  <span className="w-full md:text-[24px] font-semibold flex">
+                    N G N
+                  </span>
+                </a>
               </div>
             </div>
 
             <div className="flex md:ml-0 flex-col gap-1 md:items-center md:justify-center">
               <div className="flex flex-row items-center gap-3 ">
-              <Link to="https://x.com/ridesmashng?s=21/">
+                <Link to="https://x.com/ridesmashng?s=21/">
                   <FaTwitter className="hover:text-secondary text-2xl" />
                 </Link>
-             
+
                 <Link to="https://www.instagram.com/ridesmashnigeria/">
                   <FaInstagram className="hover:text-secondary text-2xl" />
                 </Link>
-             
+
                 <Link to="https://www.tiktok.com/@ridesmash?_t=ZM-8spvH4JpCrd&_r=1">
                   <FaTiktok className="hover:text-secondary text-2xl" />
                 </Link>

@@ -66,7 +66,7 @@ const Hero = () => {
               Flight
             </Link>
             <Link
-              to="/"
+              to="/work-visa"
               className="flex items-center border-[1px] md:border-[1px] border-white bg-opacity-100 hover:bg-opacity-50 justify-center bg-transparent transition-all duration-300 text-white py-2 px-5 md:py-2 md:px-6 lg:px-6 lg:py-3 rounded-full hover:text-white hover:bg-primary font-semibold text-sm md:text-lg"
             >
               <img src={stamp} className='pr-2' alt="visa stamp icon image" />
