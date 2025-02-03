@@ -12,6 +12,7 @@ import Germany from "./pages/germany";
 import Luxembourg from "./pages/luxembourg";
 import Croatia from "./pages/croatia";
 import AboutUs from "./pages/aboutUs";
+import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/passport-services" element={<PassportPage />} />
           <Route path="/job-new-zealand" element={<NewZealand />} />
           <Route path="/job-netherlands" element={<Netherlands />} />
