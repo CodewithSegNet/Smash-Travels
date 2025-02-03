@@ -57,7 +57,7 @@ const read = [
 // Individual card component
 const VisaProcessCard = ({ img, title, description, index }) => {
   return (
-    <div className="text-regular md:pb-[2rem] mx-6 md:mx-6 bg-white rounded-xl">
+    <div className="text-regular md:pb-[2rem] bg-white rounded-xl">
       <div className="relative">
         <img
           src={img}
@@ -69,7 +69,7 @@ const VisaProcessCard = ({ img, title, description, index }) => {
         </div>
       </div>
       <div className="pt-2">
-        <h3 className="font-semibold font-meutasBold text-lg">{title}</h3>
+        <h3 className="font-semibold font-meutasRegular text-lg">{title}</h3>
         <p className="pt-2 leading-[1.5] font-meutasLight text-sm md:text-md">
           {description}
         </p>
@@ -86,18 +86,21 @@ const VisaProcess = ({ title, steps, className }) => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className={`max-w-[1289px] mx-auto pt-[6rem] md:pt-[8rem] ${className}`}
+      className={`max-w-[1289px] pt-[6rem] mx-auto md:pt-[8rem]  ${className}`}
     >
+      <div className="mx-6">
       <div className="text-center mb-3 md:mb-8">
         <h2 className="font-meutasRegular text-2xl lg:text-4xl font-bold">
           {title}
         </h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8">
         {steps.map((step, index) => (
           <VisaProcessCard key={index} {...step} index={index} />
         ))}
       </div>
+      </div>
+
     </motion.div>
   );
 };

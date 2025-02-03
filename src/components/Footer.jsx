@@ -21,7 +21,7 @@ const Footer = () => {
               Product
             </h1>
             <ul className="space-y-3">
-              <Link to="" className="block hover:text-secondary text-gray-200">
+              <Link to="/" className="block hover:text-secondary text-gray-200">
                 Flight Booking
               </Link>
               <Link
@@ -31,7 +31,7 @@ const Footer = () => {
                 Work Visa
               </Link>
               <Link
-                to="/passport-servicess"
+                to="/passport-services"
                 className="block hover:text-secondary  text-gray-200"
               >
                 Passport
@@ -44,7 +44,7 @@ const Footer = () => {
               Company
             </h1>
             <ul className="space-y-3">
-              <Link to=" " className="block hover:text-secondary text-gray-200">
+              <Link to="" className="block hover:text-secondary text-gray-200">
                 About Us
               </Link>
               <Link
@@ -147,7 +147,7 @@ const Footer = () => {
                   <FaTwitter className="hover:text-secondary text-2xl" />
                 </Link>
 
-                <Link to="https://www.instagram.com/ridesmashnigeria/">
+                <Link to="https://www.instagram.com/smashtravelsng/">
                   <FaInstagram className="hover:text-secondary text-2xl" />
                 </Link>
 
@@ -157,7 +157,7 @@ const Footer = () => {
                 <Link to="https://web.facebook.com/ridesmashNigeria">
                   <FaLinkedin className="hover:text-secondary text-2xl transition-all duration-300 cursor-pointer" />
                 </Link>
-                <Link to="https://web.facebook.com/ridesmashNigeria">
+                <Link to="https://web.facebook.com/smashtravelsconnect?_rdc=1&_rdr#">
                   <FaFacebookF className="hover:text-secondary text-2xl transition-all duration-300 cursor-pointer" />
                 </Link>
               </div>

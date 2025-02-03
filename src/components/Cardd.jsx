@@ -13,6 +13,7 @@ const Cardd = ({
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  
   return (
     <div className="flex flex-col w-[387px]">
       <div className="relative">
@@ -22,9 +23,9 @@ const Cardd = ({
         <img src={image} className="h-52 w-[387px] rounded-t-[10px] mb-2" />
       </div>
 
-      <div className="pt-2 px-2 mb-3">
+      <div className="pt-2 mb-3">
         <div className="flex items-center">
-        <h3 className="font-semibold font-meutasBold text-regular md:text-xl">
+        <h3 className="font-semibold font-meutasRegular text-regular md:text-xl">
           {title}
           
         </h3>

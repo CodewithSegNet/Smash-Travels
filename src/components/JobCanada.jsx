@@ -104,8 +104,8 @@ const JobDenmark = () => {
         <p className="text-center text-regular text-2xl font-meutasRegular lg:text-4xl font-bold mb-[.8rem] md:mb-[1rem]">
           Jobs Available
         </p>
-        <p className="md:text-xl font-light text-sm text-newgray font-meutasRegular">
-          Below Are The Jobs Available In Denmark
+        <p className="xl:text-[24px] text-[12px] md:text-[14px] lg:text-[24px] font-light text-newgray font-meutasRegular">
+          Below Are The Jobs Available In Canada
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8">
