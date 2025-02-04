@@ -7,10 +7,10 @@ import { fadeIn } from '../variants'
 
 const PassportHero = () => {
   return (
-    <div className="flex md:px-14 p-4 mt-[2rem] md:mt-[3rem] xl:mt-[5rem] max-w-screen-2xl mx-auto max-h-[560px] grow relative items-end items-none md:items-center">
+    <div className="flex md:px-14 p-4 pt-[8rem] md:pt-[10rem] xl:pt-[12rem] max-w-screen-2xl mx-auto max-h-[560px] grow relative items-end items-none md:items-center">
       <div className="flex md:flex-row flex-col w-full">
         <div
-          className="w-[100%] flex flex-col min-h-[240px] md:min-h-[350px]  lg:min-h-[380px] md:mt-0 lg:mt-0 mt-3"
+          className="w-[100%] flex flex-col min-h-[240px] md:min-h-[350px] lg:min-h-[380px] md:mt-0 lg:mt-0 mt-3"
         >
 
           <div className='hidden md:block'>

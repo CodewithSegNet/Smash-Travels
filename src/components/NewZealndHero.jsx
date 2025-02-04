@@ -36,8 +36,7 @@ const NewZealandHero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="xl:text-7xl font-meutasLight md:text-4xl lg:text-6xl text-3xl text-white"
-            >
+              className="xl:text-7xl font-meutasBold md:text-4xl lg:text-6xl text-3xl text-white">
               Relocate to New Zealand Today With SmashTravels
             </motion.h1>
           </div>
@@ -46,24 +45,19 @@ const NewZealandHero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
-            className="xl:text-lg font-meutaslight md:font-meutasLight font-black text-[14px] text-gray-100 pt-4 pb-6 md:pt-6 lg:text-[15px] md:text-[14px] md:pb-4"
+            className="xl:text-lg font-meutaslight md:font-meutasLight  text-[14px] text-gray-100 pt-4 pb-6 md:pt-6 lg:text-[15px] md:text-[14px] md:pb-4"
           >
-            Begin Your Process By Selecting Your Job of Interest
-          </motion.h3>
+           <span className="font-black"> Begin Your Process</span> By Selecting Your  <span className="font-black"> Job of Interest.</span>
+           </motion.h3>
           <motion.div
             variants={fadeIn("up", 0.8)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
-            className="font-meutaslight md:font-meutasLight text-[28px] text-3xl text-gray-100 pt-4 pb-6 md:pt-6  md:pb-4 flex items-center"
+            className="flex items-center font-meutasRegular text-[14px] text-gray-100 pt-4 pb-6 md:pt-6 lg:text-[25px] md:text-[15px] md:pb-4"
           >
-            <img
-              src={clock}
-              className="w-10 h-10 lg:w-16 lg:h-16 mr-3"
-            />
-            <span className="xl:text-[32px] md:text-[24px] font-meutaslight md:font-meutasLight text-[14px] text-gray-100 pt-4 pb-6 md:pt-6 lg:text-[15px] md:pb-4">
-              4 - 6 Months Processing Time
-            </span>
+            <img src={clock} className="w-10 h-10 lg:w-16 lg:h-16 mr-3" />4 - 6
+            Months Processing Time
           </motion.div>
         </div>
       </div>

@@ -35,7 +35,7 @@ const PackagePricing = ({ country }) => {
   return (
     <>
     <section className="mx-7">
-    <div className="max-w-screen-2xl mx-auto xl:mt-[150px] md:mt-[130px] mt-[120px] mb-[25px] lg:mb-[40px]">
+    <div className="max-w-screen-2xl mx-auto xl:mt-[150px] md:mt-[130px] mt-[95px] mb-[25px] lg:mb-[40px]">
       <div className="flex flex-col justify-center items-center mb-[30px] ">
         <p className="text-center text-regular text-2xl font-meutasRegular lg:text-4xl font-bold mb-[.8rem] md:mb-[1rem]">
           {country} Package Pricing
@@ -44,7 +44,7 @@ const PackagePricing = ({ country }) => {
           Select Preferred Package
         </p>
       </div>
-      <div className="px-8 md:px-1 mx-auto w-[100%] md:w-[84%] h-[150px] md:h-[50px] my-2 shadow-md rounded-full lg:text-[12px] text-[8px] flex flex-col md:flex-row flex-nowrap justify-center items-center md:items-center text-newgray">
+      <div className="px-8 md:px-1 mx-auto w-[100%] md:w-[84%] h-[150px] md:h-[50px] my-2 shadow-md rounded-xl lg:rounded-full lg:text-[12px] text-[8px] flex flex-col md:flex-row flex-nowrap justify-center items-center md:items-center text-newgray">
         <img src={notice} alt="" />
         <span className=" font-meutasBold text-primary text-[13px] md:text-[15px] md:pt-[4px] whitespace-nowrap">Please Note:</span>
         <span className="text-[11px] pl-2 md:font-medium md:text-[12px]">
