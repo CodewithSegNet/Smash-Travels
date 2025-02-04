@@ -90,7 +90,7 @@ const FAQ = () => {
               
                 className="border rounded-xl bg-primary p-5 shadow-lg min-h-[300px] md:min-h-[500px]"
               >
-                <p className="md:text-[32px] leading-[42px] md:leading-[54px] font-meutasRegular md:mt-[30px] text-white">
+                <p className="md:text-[26px] leading-[42px] md:leading-[54px] font-meutasRegular md:mt-[30px] text-white">
                   {faqData[activeIndex].answer}
                 </p>
               </div>
