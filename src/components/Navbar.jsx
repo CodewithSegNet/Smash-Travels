@@ -29,7 +29,7 @@ const Navbar = () => {
       icon: <BiChevronDown aria-hidden="true" />,
       ariaLabel: "Explore top-rated visa services and affordable travel packages with Smash Travels",
       submenu: [
-        { link: "Flight", path: "/flight", ariaLabel: "Book affordable flights for your next adventure" },
+        { link: "Flight", path: "/", ariaLabel: "Book affordable flights for your next adventure" },
         { link: "Work Visa", path: "/work-visa", ariaLabel: "Hassle-free work visa application services" },
         { link: "Passport", path: "/passport-services", ariaLabel: "Quick and easy passport processing" },
         { link: "Airport Pickup", path: "/Airport-pickup", ariaLabel: "Quick and easy passport processing" },
