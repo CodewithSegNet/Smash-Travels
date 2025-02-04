@@ -4,9 +4,12 @@ import airplane from "../assets/airplane-flight-icon.svg";
 import stamp from "../assets/carbon-stamp-icon.svg";
 import { fadeIn } from "../variants";
 
+
+
+
 const ContactHero = () => {
   return (
-    <div className="flex md:px-14 p-4 mt-[2rem] md:mt-[3rem] xl:mt-[5rem] max-w-screen-2xl mx-auto max-h-[560px] grow relative items-end items-none md:items-center">
+    <div className="flex md:px-14 p-4 pt-[8rem] md:pt-[10rem] xl:pt-[12rem] max-w-screen-2xl mx-auto max-h-[560px] grow relative items-end items-none md:items-center">
       <div className="flex md:flex-row flex-col w-full">
         <div className="w-[100%] flex flex-col md:mt-0 lg:mt-0 min-h-[240px] md:min-h-[350px] lg:min-h-[380px] mt-3">
           <div className="hidden md:block">
@@ -41,16 +44,15 @@ const ContactHero = () => {
               Connect With Us Today For a seamless Experience
             </motion.h1>
           </div>
-          <motion.h3
+          <motion.p
             variants={fadeIn("up", 0.6)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
             className="xl:text-lg font-meutaslight md:font-meutasLight text-[14px] text-gray-100 pt-4 pb-6 md:pt-6 lg:text-[15px] md:text-[14px] md:pb-4"
           >
-            We're here to guide you. reach out now!We're here to guide you.
-            reach out now!
-          </motion.h3>
+            We're here to <span className="font-black">guide you.</span> reach out now!
+          </motion.p>
         </div>
       </div>
     </div>

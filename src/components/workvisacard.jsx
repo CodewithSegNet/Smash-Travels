@@ -89,7 +89,7 @@ const VisaProcess = ({ title, steps, className }) => {
       className={`max-w-[1289px] pt-[6rem] mx-auto md:pt-[8rem]  ${className}`}
     >
       <div className="mx-6">
-      <div className="text-center mb-3 md:mb-8">
+      <div className="text-center md:mb-[3rem] mb-3">
         <h2 className="font-meutasRegular text-2xl lg:text-4xl font-bold">
           {title}
         </h2>

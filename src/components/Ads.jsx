@@ -3,10 +3,13 @@ import flight from "../assets/planeimage.png";
 import phone from "../assets/image.png";
 import { fadeIn } from "../variants";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 
 const Book = () => {
+  const [startSecondSlider, setStartSecondSlider] = useState(false);
+  const secondSliderRef = useRef(null);
+
   const settings1 = {
     dots: false,
     lazyLoad: true,
@@ -18,12 +21,20 @@ const Book = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    afterChange: () => {
+      setTimeout(() => {
+        setStartSecondSlider(true);
+        if (secondSliderRef.current) {
+          secondSliderRef.current.slickNext();
+        }
+      }, 500);
+    },
   };
 
   const settings2 = {
     dots: false,
     lazyLoad: true,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     speed: 2000,
     autoplaySpeed: 7000,
@@ -47,7 +58,7 @@ const Book = () => {
           className="col-span-2 row-span-2 bg-cover bg-center h-[400px] md:h-[600px] lg:h-[800px] rounded-[20px] p-6 flex flex-col justify-center items-center text-white"
           style={{ backgroundImage: `url(${book})` }}
         >
-         <h3 className="font-meutasBold text-4xl md:text-6xl md:p-6 lg:text-7xl leading-normal md:!leading-extra-loose">
+          <h3 className="font-meutasBold text-4xl md:text-6xl md:p-6 lg:text-7xl leading-normal md:!leading-extra-loose">
             Book your Flights Today With <span className="text-primary">Smash Travels</span>
           </h3>
           <div className="mx-auto mt-[1rem]">
@@ -58,33 +69,31 @@ const Book = () => {
         </div>
 
         {/* Second Box */}
-  <div className="h-auto overflow-hidden rounded-[20px] relative col-span-2 lg:col-span-1">
-  <Slider {...settings1}>
-    {[flight, book, phone].map((image, idx) => (
-      <div
-        key={idx}
-        className="h-[388px] flex justify-center items-center px-[7px] overflow-hidden relative"
-      >
-        <img
-          src={image}
-          alt={`Slide ${idx + 1}`}
-          className="w-full h-full rounded-[20px] object-cover"
-        />
-        {/* Button Container */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <button className="py-[.7rem] px-[2rem] md:py-[.5rem] md:px-[2rem] text-white bg-primary md:text-[1.3rem] lg:text-[1.2rem] hover:bg-opacity-80 border-[3px] border-primary hover:border-white transition-all duration-300 font-bold rounded-full">
-            Book Now
-          </button>
+        <div className="h-auto overflow-hidden rounded-[20px] relative col-span-2 lg:col-span-1">
+          <Slider {...settings1}>
+            {[flight, book, phone].map((image, idx) => (
+              <div
+                key={idx}
+                className="h-[388px] flex justify-center items-center px-[7px] overflow-hidden relative"
+              >
+                <img
+                  src={image}
+                  alt={`Slide ${idx + 1}`}
+                  className="w-full h-full rounded-[20px] object-cover"
+                />
+                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                  <button className="py-[.7rem] px-[2rem] md:py-[.5rem] md:px-[2rem] text-white bg-primary md:text-[1.3rem] lg:text-[1.2rem] hover:bg-opacity-80 border-[3px] border-primary hover:border-white transition-all duration-300 font-bold rounded-full">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
-      </div>
-    ))}
-  </Slider>
-</div>
-
 
         {/* Third Box */}
         <div className="h-auto hidden lg:block overflow-hidden rounded-[20px]">
-          <Slider {...settings2}>
+          <Slider ref={secondSliderRef} {...settings2}>
             {[phone, flight, book].map((image, idx) => (
               <div
                 key={idx}

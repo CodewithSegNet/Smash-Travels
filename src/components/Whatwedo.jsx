@@ -40,7 +40,7 @@ const Whatwedo = () => {
     >
       <div className="mx-6">
       <div>
-        <h2 className="text-center text-regular text-2xl font-meutasRegular lg:text-4xl font-bold mb-4 md:mb-8">
+        <h2 className="text-center text-regular text-2xl font-meutasRegular lg:text-4xl font-bold mb-4 md:mb-12">
           What Do We Do
         </h2>
       </div>

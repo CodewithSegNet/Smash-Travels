@@ -27,7 +27,7 @@ const CountryNavbar = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-5 h-5 md:w-[24px] md:h-[24px] mr-3 transition-all duration-300 text-gray-200 group-hover:text-primary"
+              className="w-5 h-5 md:w-[24px] md:h-[24px] mr-1 md:mr-3 transition-all duration-300 text-gray-200 group-hover:text-primary"
             >
               <path
                 fillRule="evenodd"
@@ -36,7 +36,7 @@ const CountryNavbar = () => {
               />
             </svg>
 
-            <span className="font-meutasRegular lg:text-2xl transition-all md:pt-1 duration-300 text-gray-200 group-hover:text-primary">
+            <span className="font-meutasRegular lg:text-2xl transition-all pt-1 md:pt-1 duration-300 text-gray-200 group-hover:text-primary">
               Go Back
             </span>
           </NavLink>

@@ -98,7 +98,7 @@ const JobDenmark = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-      className="max-w-[1289px] text-regular mx-auto mt-[30px] md:mt-[50px] lg:mt-[80px] mb-[3rem] md:mb-[3rem] lg:mb-[3rem]"
+      className="max-w-[1289px] text-regular mx-auto mt-[50px] md:mt-[50px] lg:mt-[80px] mb-[3rem] md:mb-[3rem] lg:mb-[3rem]"
     >
       <div className=" flex flex-col justify-center items-center mb-[40px]">
         <p className="text-center text-regular text-2xl font-meutasRegular lg:text-4xl font-bold mb-[.8rem] md:mb-[1rem]">

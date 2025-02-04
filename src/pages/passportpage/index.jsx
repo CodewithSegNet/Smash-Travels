@@ -65,10 +65,10 @@ const PassportPage = () => {
           srcSet={`${backgroundImageSmall} 720w, ${backgroundImageMedium} 1440w, ${backgroundImage} 2880w`}
           sizes="(min-width: 2880px) 2880px, 100vw"
           alt="Explore travel packages and visa services with Smash Travels"
-          className="absolute object-cover w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px] object-fit inset-0"
+          className="absolute object-cover object-top top-[0px] w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[630px] object-fit inset-0"
           loading="eager"
         />
-          <div className="absolute inset-0 bg-black bg-opacity-30 h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px]"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-30 h-[450px] md:h-[580px] lg:h-[550px] xl:h-[630px]"></div>
 
         <Navbar />
         <Hero />

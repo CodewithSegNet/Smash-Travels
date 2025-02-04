@@ -1,5 +1,5 @@
 
-import { useState, useEffect  } from 'react';
+import { useState, useEffect, useRef } from "react";
 import logo from '../assets/logos.png';
 import { BiChevronDown } from "react-icons/bi";
 import {FaXmark, FaBars} from 'react-icons/fa6'
@@ -55,8 +55,34 @@ const Navbar = () => {
   const toggle = () => {
     setIsMenuOpened((prev) => !prev);
   };
+ 
 
+
+ 
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isAtTop, setIsAtTop] = useState(true);
   
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Check if at the top of the page
+      setIsAtTop(currentScrollY === 0); 
+      
+      // Check if the user is scrolling up or down
+      setIsScrollingUp(currentScrollY < lastScrollY || currentScrollY === 0); 
+      
+      // Update the last scroll position
+      setLastScrollY(currentScrollY);
+    };
+  
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+  
+
   
   useEffect(() => {
     const isMobile = window.matchMedia("(max-width: 1020px)").matches;
@@ -75,18 +101,29 @@ const Navbar = () => {
   
   const [openSubmenuIndex, setOpenSubmenuIndex] = useState(null);
 
-  const handleDropdownToggle = (index) => {
-    if (openSubmenuIndex !== null && openSubmenuIndex !== index) {
+  const dropdownRef = useRef(null);
 
-      setOpenSubmenuIndex(null);
-  
-      setTimeout(() => {
-        setOpenSubmenuIndex(index);
-      }, 500);
-    } else {
-      setOpenSubmenuIndex(openSubmenuIndex === index ? null : index);
-    }
+  const handleDropdownToggle = (index) => {
+    setOpenSubmenuIndex(openSubmenuIndex === index ? null : index);
   };
+  
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpenSubmenuIndex(null);
+      }
+    };
+  
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+  
+  
+
+
   const handleMouseEnter = (index) => {
     if (window.innerWidth >= 1024) {
       setOpenSubmenuIndex(index);
@@ -99,20 +136,27 @@ const Navbar = () => {
     }
   };
 
-  
+
 
   
   return (
     
     <>
-      <nav role='navigation' aria-label="Main Navigation" className={`md:px-14 pb-5 pt-5 relative max-w-screen-2xl mx-auto w-full z-70 text-white px-4 transition-all duration-500 ${
-            isMenuOpened ? "bg-gradient-active" : "bg-transparent"
-          }`}
-          style={
-            isMenuOpened
-              ? { background: "linear-gradient(to top,  rgba(122, 94, 16, 0.3), rgba(186, 174, 0, 0.7))" }
-              : {}
-          }>
+
+<nav
+  role="navigation"
+  aria-label="Main Navigation"
+  className={`md:px-14 pb-5 pt-5 fixed top-0 left-0 w-full z-50 text-white px-4 transition-all duration-500
+    ${isScrollingUp ? "translate-y-0" : "-translate-y-full"}
+    ${isAtTop ? "bg-gradient-active" : "bg-black/70 backdrop-blur-md"}`}
+  style={
+    isMenuOpened
+      ? { background: "linear-gradient(to top, rgba(122, 94, 16, 0.3), rgba(186, 174, 0, 0.7))" }
+      : {}
+  }
+>
+
+
       <div
           className="flex justify-between z-20" 
 >
@@ -130,7 +174,7 @@ const Navbar = () => {
                 <div className='flex items-center gap-1 text-white hover:text-secondary  transition-all duration-300'>
                 <NavLink to='/' aria-label="Book your next affordable travel package with Smash Travels" className='text-md' >Home</NavLink>
               </div>
-              <div className="relative">
+              <div className="relative" ref={dropdownRef}>
                   <div
                     className="flex items-center gap-1  justify-center text-white hover:text-secondary transition-all duration-300 cursor-pointer"
                     onClick={() => handleDropdownToggle(1)}
@@ -150,7 +194,7 @@ const Navbar = () => {
                     <div className="absolute top-[100%] left-0 bg-white shadow-lg rounded-lg mt-2 z-10 w-[350px]">
                       <ul className="py-2">
                         <li className="px-4 py-2 hover:bg-gray-100">
-                          <NavLink to="" className="text-black">
+                          <NavLink to="/" className="text-black">
                           <div className='flex items-center'>
                             <div className='w-10 h-6 pr-3'>
                               <img className='text-primary' src={airplane} alt="" />
@@ -260,7 +304,7 @@ const Navbar = () => {
 
              </div>
             </div>
-            <NavLink to='/' className='bg-secondary hidden lg:block py-2 px-6 xl:px-8 rounded-full text-white bg-opacity-100 hover:bg-opacity-50 hover:text-white hover:opacity-1 transition-all duration-300 border-[3px] border-primary hover:border-white text-lg font-bold'>Get Started</NavLink>
+            <NavLink to='/' className='bg-secondary hidden lg:block py-3 px-6 xl:px-8 rounded-full text-white bg-opacity-100 hover:bg-opacity-50 hover:text-white hover:opacity-1 transition-all duration-300 border-[3px] border-primary hover:border-white text-lg font-bold'>Get Started</NavLink>
 
             </div>
              {/* small screen */}

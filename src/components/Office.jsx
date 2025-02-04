@@ -26,10 +26,10 @@ const Office = () => {
 
   return (
     <div className="max-w-screen-2xl mx-auto">
- <div className="flex-col md:flex-row  mx-6 text-regular mt-[6rem]  md:mt-[9rem] mb-[3rem] md:mb-[5rem] flex justify-center shadow-md rounded-2xl py-[44px] gap-[50px] lg:gap-[120px]">
+ <div className="flex-col md:flex-row  mx-6 text-regular mt-[6rem] md:mt-[10rem] mb-[3rem] md:mb-[5rem] flex justify-center shadow-md rounded-2xl py-[44px] gap-[50px] lg:gap-[120px]">
       {offices.map((item) => {
         return (
-          <div className="flex flex-col justify-center text-center font-meutasRegular items-center">
+          <div key={item.id} className="flex flex-col justify-center text-center font-meutasRegular items-center">
             <div className="flex flex-col px-6">
             <div>
               <h3 className="font-meutasRegular text-xl font-bold md:text-3xl mb-3">

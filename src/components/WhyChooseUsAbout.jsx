@@ -40,7 +40,7 @@ const WhychooseusAbout = () => {
     >
       <div className="mx-6">
       <div>
-        <h2 className="text-center font-meutasRegular text-2xl lg:text-4xl text-regular font-bold mb-4 md:mb-8">
+        <h2 className="text-center font-meutasRegular text-2xl lg:text-4xl text-regular font-bold mb-4 md:mb-12">
           Why Choose Us
         </h2>
       </div>

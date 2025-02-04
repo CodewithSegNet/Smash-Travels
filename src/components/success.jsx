@@ -56,7 +56,7 @@ const SuccessRate = () => {
   }, [isInView1, isInView2, isInView3, controls1, controls2, controls3]);
 
   return (
-    <section className="max-w-screen-2xl pb-[3rem] md:pb-[5rem] w-[100%] mt-[2rem] md:mt-[3rem] xl:mt-[4rem] mx-auto px-7">
+    <section className="max-w-screen-2xl pb-[3rem] lg:pb-[5rem] w-[100%] mt-[2rem] md:mt-[3rem] xl:mt-[4rem] mx-auto px-7">
       <div>
         <motion.div
           variants={fadeIn("up", 0.3)}

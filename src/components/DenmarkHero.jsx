@@ -46,10 +46,10 @@ const DenmarkHero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
-            className="xl:text-lg font-meutaslight md:font-meutasLight font-black text-[14px] text-gray-100 pt-4 pb-6 md:pt-6 lg:text-[15px] md:text-[14px] md:pb-4"
+            className="xl:text-lg font-meutaslight md:font-meutasLight text-[14px] text-gray-100 pt-4 pb-6 md:pt-6 lg:text-[15px] md:text-[14px] md:pb-4"
           >
-            Begin Your Process By Selecting Your Job of Interest
-          </motion.h3>
+           <span className="font-black"> Begin Your Process</span> By Selecting Your  <span className="font-black"> Job of Interest.</span>
+           </motion.h3>
           <motion.div
             variants={fadeIn("up", 0.8)}
             initial="hidden"

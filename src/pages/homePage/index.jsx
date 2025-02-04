@@ -17,6 +17,7 @@ import Faq from "../../components/Faq";
 
 const HomePage = () => {
   return (
+    <>
     <HelmetProvider>
       <Helmet>
         <title>Smash Travels | Home</title>
@@ -52,16 +53,18 @@ const HomePage = () => {
 
       {/* Hero Section */}
       <div className="relative w-full  md:max-h-[806px]">
+
         <img
           src={backgroundImage}
           srcSet={`${backgroundImageSmall} 720w, ${backgroundImageMedium} 1440w, ${backgroundImage} 2880w`}
           sizes="(min-width: 2880px) 2880px, 100vw"
           alt="Explore travel packages and visa services with Smash Travels"
-          className="absolute object-cover w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[640px] object-fit inset-0"
+          className="absolute object-cover object-top top-[0px] w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[630px] object-fit inset-0"
           loading="eager"
         />
-        <Navbar />
+              <Navbar />
         <Hero />
+
         <Card />
         <Ads />
         <Bookings />
@@ -70,8 +73,10 @@ const HomePage = () => {
         <Testimonies />
         <Faq />
         <Footer />
-      </div>
+        </div>
+
     </HelmetProvider>
+    </>
   );
 };
 
