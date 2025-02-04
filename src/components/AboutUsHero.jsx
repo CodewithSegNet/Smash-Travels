@@ -59,7 +59,7 @@ const AboutUsHero = () => {
           >
             <Link
               to="/"
-              className="flex items-center justify-center text-md bg-opacity-100 hover:bg-opacity-50  bg-secondary transition-all duration-300 py-2 px-4 md:py-2 md:px-6 lg:py-3 lg:px-6 text-white rounded-full hover:text-white text-sm md:text-lg font-semibold"
+              className="flex items-center justify-center text-md bg-opacity-100 hover:bg-opacity-50 border-[3px] border-secondary hover:border-[3px]  hover:border-white bg-secondary transition-all duration-300 py-2 px-4 md:py-2 md:px-6 lg:py-3 lg:px-6 text-white rounded-full hover:text-white text-sm md:text-lg font-semibold"
             >
               Apply for Work Visa
             </Link>
