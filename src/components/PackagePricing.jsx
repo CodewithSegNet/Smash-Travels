@@ -44,10 +44,10 @@ const PackagePricing = ({ country }) => {
           Select Preferred Package
         </p>
       </div>
-      <div className="px-8 md:px-1 mx-auto w-[100%] md:w-[84%] h-[150px] md:h-[50px] my-2 shadow-md rounded-xl lg:rounded-full lg:text-[12px] text-[8px] flex flex-col md:flex-row flex-nowrap justify-center items-center md:items-center text-newgray">
+      <div className="px-3 md:px-1 mx-auto w-[100%] md:w-[100%] lg:max-w-[100%] xl:max-w-[85%] h-[150px] lg:h-[50px] my-2 shadow-md rounded-xl lg:rounded-full lg:text-[12px] text-[8px] flex flex-col lg:flex-row flex-nowrap justify-center items-center md:items-center text-newgray">
         <img src={notice} alt="" />
-        <span className=" font-meutasBold text-primary text-[13px] md:text-[15px] md:pt-[4px] whitespace-nowrap">Please Note:</span>
-        <span className="text-[11px] pl-2 md:font-medium md:text-[12px]">
+        <span className=" font-meutasBold text-primary text-[13px] md:text-[10px] md:pt-[4px] whitespace-nowrap">Please Note:</span>
+        <span className="text-[11px] pl-2 md:font-medium md:text-[9.5px] md:text-center lg:text-left">
           This package covers all expenses ranging from your processing, visa,
           and accommodation. This package does not in any way cover the expense
           of your flight tickets to your desired destination.

@@ -95,13 +95,13 @@ const Footer = () => {
             </h1>
             <ul className="space-y-3">
               <Link
-                to="/ride-hailing"
+                to=""
                 className="block hover:text-secondary text-gray-200"
               >
                 Terms & Conditions
               </Link>
               <Link
-                to="/ride-hailing"
+                to=""
                 className="block hover:text-secondary text-gray-200"
               >
                 Privacy
@@ -143,10 +143,6 @@ const Footer = () => {
 
             <div className="flex md:ml-0 flex-col gap-1 md:items-center md:justify-center">
               <div className="flex flex-row items-center gap-3 ">
-                <Link to="https://x.com/ridesmashng?s=21/">
-                  <FaTwitter className="hover:text-secondary text-2xl" />
-                </Link>
-
                 <Link to="https://www.instagram.com/smashtravelsng/">
                   <FaInstagram className="hover:text-secondary text-2xl" />
                 </Link>
@@ -154,9 +150,7 @@ const Footer = () => {
                 <Link to="https://www.tiktok.com/@ridesmash?_t=ZM-8spvH4JpCrd&_r=1">
                   <FaTiktok className="hover:text-secondary text-2xl" />
                 </Link>
-                <Link to="https://web.facebook.com/ridesmashNigeria">
-                  <FaLinkedin className="hover:text-secondary text-2xl transition-all duration-300 cursor-pointer" />
-                </Link>
+            
                 <Link to="https://web.facebook.com/smashtravelsconnect?_rdc=1&_rdr#">
                   <FaFacebookF className="hover:text-secondary text-2xl transition-all duration-300 cursor-pointer" />
                 </Link>
