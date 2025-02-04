@@ -20,7 +20,7 @@ const Navbar = () => {
   const navItems = [
     {
       link: "Home",
-      path: "/home",
+      path: "/",
       ariaLabel: "View our awesome travel and visa service",
     },
     {
