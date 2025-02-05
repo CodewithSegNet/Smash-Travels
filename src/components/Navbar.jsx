@@ -56,6 +56,18 @@ const Navbar = () => {
     setIsMenuOpened((prev) => !prev);
   };
  
+  useEffect(() => {
+    const handleScroll = () => {
+      setOpenSubmenuIndex(null); // Close submenu on scroll
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
+  
 
 
  
@@ -174,14 +186,14 @@ const Navbar = () => {
                 <div className='flex items-center gap-1 text-white hover:text-secondary  transition-all duration-300'>
                 <NavLink to='/' aria-label="Book your next affordable travel package with Smash Travels" className='text-md' >Home</NavLink>
               </div>
-              <div className="relative" ref={dropdownRef}>
+             <div className="relative" ref={dropdownRef}>
                   <div
                     className="flex items-center gap-1  justify-center text-white hover:text-secondary transition-all duration-300 cursor-pointer"
                     onClick={() => handleDropdownToggle(1)}
                   >
                     <NavLink to="" className="text-md">
                       Services
-                    </NavLink>
+                    </ NavLink>
                     <BiChevronDown
                       aria-hidden="true"
                       className={`text-[25px] mt-[1px] transition-transform duration-300 ${

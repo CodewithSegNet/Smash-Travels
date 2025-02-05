@@ -14,7 +14,6 @@ import Cardd from "./Cardd";
 const read = [
   {
     img: bartender,
-    title: "Bartender",
     description:
       "In the hospitality sector in Germany, you'll play a vital role in creating exceptional guest experiences. Responsibilities may...",
     fulldescription:
@@ -23,7 +22,6 @@ const read = [
   },
   {
     img: warehouse,
-    title: "Warehouse Workers",
     description:
       "In the logistics sector in Germany, you'll oversee the efficient transportation, storage, and distribution of goods...",
     fulldescription:
@@ -32,7 +30,6 @@ const read = [
   },
   {
     img: carpenter,
-    title: "Carpenters",
     description:
       "Working in Germany's construction sector involves building, repairing, and maintaining infrastructure. Responsibilities may include...",
     fulldescription:
@@ -41,7 +38,6 @@ const read = [
   },
   {
     img: mechanic,
-    title: "Mechanics",
     description:
       "The technical sector in Germany offers roles requiring specialized skills in fields such as IT, mechanics, or electronics...",
     fulldescription:
@@ -50,7 +46,6 @@ const read = [
   },
   {
     img: engineering,
-    title: "Electrical Engineers",
     description:
       "In the engineering sector in Germany, you'll contribute to designing, developing, and implementing innovative solutions...",
     fulldescription:
@@ -59,7 +54,6 @@ const read = [
   },
   {
     img: roomAttenders,
-    title: "Room Attenders",
     description:
       "Housekeeping roles in Germany focus on maintaining clean, organized, and hygienic spaces in residential, commercial, or...",
     fulldescription:
@@ -68,7 +62,6 @@ const read = [
   },
   {
     img: customerRep,
-    title: "Customer Service Representatives",
     description:
       "As an NDT Officer in Germany, your primary responsibilities will involve providing excellent customer service in the field of...",
     fulldescription:
@@ -116,7 +109,6 @@ const JobDenmark = () => {
                 image={item.img}
                 buttonText="Apply Now"
                 description={item.description}
-                title={item.title}
                 fullDescription={item.fulldescription}
                 sector={item.sector}
               />
