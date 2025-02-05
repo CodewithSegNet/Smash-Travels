@@ -62,7 +62,7 @@ const HomePage = () => {
           className="absolute object-cover object-top top-[0px] w-full h-[450px] md:h-[580px] lg:h-[550px] xl:h-[630px] object-fit inset-0"
           loading="eager"
         />
-              <Navbar />
+        <Navbar />
         <Hero />
 
         <Card />

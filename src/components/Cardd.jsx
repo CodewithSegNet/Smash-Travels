@@ -105,10 +105,10 @@ const Cardd = ({
   return (
     <div className="flex flex-col w-[387px]">
       <div className="relative">
-        <span className="flex justify-center items-center text-[16px] font-meutasRegular bg-black bg-opacity-50 py-2 px-3 absolute top-4 left-4 rounded-full z-20 text-white">
+        <span className="flex justify-center items-center text-[16px] font-meutasRegular bg-black bg-opacity-50 py-2 px-3 absolute top-3 left-4 rounded-full z-20 text-white">
           {sector}
         </span>
-        <img src={image} className="h-52 w-[387px] rounded-t-[10px] mb-2" />
+        <img src={image} className="h-48 w-[387px] object-cover rounded-t-[10px] mb-2" />
       </div>
 
       <div className="pt-2 mb-3">
