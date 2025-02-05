@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import bartender from "../assets/bartender.png";
-import warehouse from "../assets/warehouse.png";
-import carpenter from "../assets/carpenter.png";
-import mechanic from "../assets/mechanic.png";
-import engineering from "../assets/engineering.png";
-import roomAttenders from "../assets/roomAttenders.png";
-import customerRep from "../assets/customerRep.png";
+import bartender from "../assets/bartender.webp";
+import warehouse from "../assets/warehouse.webp";
+import carpenter from "../assets/carpenter.webp";
+import mechanic from "../assets/mechanic.webp";
+import engineering from "../assets/engineering.webp";
+import roomAttenders from "../assets/roomAttenders.webp";
+import customerRep from "../assets/customerRep.webp";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -14,7 +14,6 @@ import Cardd from "./Cardd";
 const read = [
   {
     img: bartender,
-    title: "Bartender",
     description:
       "In the hospitality sector in Norway, you'll play a vital role in creating exceptional guest experiences. Responsibilities may...",
     fulldescription:
@@ -23,7 +22,6 @@ const read = [
   },
   {
     img: warehouse,
-    title: "Warehouse Workers",
     description:
       "In the logistics sector in Norway, you'll oversee the efficient transportation, storage, and distribution of goods...",
     fulldescription:
@@ -32,7 +30,6 @@ const read = [
   },
   {
     img: carpenter,
-    title: "Carpenters",
     description:
       "Working in Norway's construction sector involves building, repairing, and maintaining infrastructure. Responsibilities may include...",
     fulldescription:
@@ -41,7 +38,6 @@ const read = [
   },
   {
     img: mechanic,
-    title: "Mechanics",
     description:
       "The technical sector in Norway offers roles requiring specialized skills in fields such as IT, mechanics, or electronics...",
     fulldescription:
@@ -50,7 +46,6 @@ const read = [
   },
   {
     img: engineering,
-    title: "Electrical Engineers",
     description:
       "In the engineering sector in Norway, you'll contribute to designing, developing, and implementing innovative solutions...",
     fulldescription:
@@ -59,7 +54,6 @@ const read = [
   },
   {
     img: roomAttenders,
-    title: "Room Attenders",
     description:
       "Housekeeping roles in Norway focus on maintaining clean, organized, and hygienic spaces in residential, commercial, or...",
     fulldescription:
@@ -68,7 +62,6 @@ const read = [
   },
   {
     img: customerRep,
-    title: "Customer Service Representatives",
     description:
       "As an NDT Officer in Norway, your primary responsibilities will involve providing excellent customer service in the field of...",
     fulldescription:

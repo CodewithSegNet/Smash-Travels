@@ -50,7 +50,7 @@ Processing Starts Here
           viewport={{ once: true }}
 
           className="xl:text-lg font-meutaslight md:font-meutasLight text-[14px] text-gray-100 pt-4 pb-6 md:pt-6 lg:text-[15px] md:text-[14px] md:pb-4">
-            Fast,  <strong className='font-black'>easy passport  </strong>processing for your journey.
+            Fast,  <strong className='font-black'>easy passport processing  </strong>for your journey.
           </motion.h3>
      
         </div>
