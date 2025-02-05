@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import bartender from "../assets/bartender.png";
-import warehouse from "../assets/warehouse.png";
-import carpenter from "../assets/carpenter.png";
-import mechanic from "../assets/mechanic.png";
-import engineering from "../assets/engineering.png";
-import roomAttenders from "../assets/roomAttenders.png";
-import customerRep from "../assets/customerRep.png";
+import bartender from "../assets/bartender.webp";
+import warehouse from "../assets/warehouse.webp";
+import carpenter from "../assets/carpenter.webp";
+import mechanic from "../assets/mechanic.webp";
+import engineering from "../assets/engineering.webp";
+import roomAttenders from "../assets/roomAttenders.webp";
+import customerRep from "../assets/customerRep.webp";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
